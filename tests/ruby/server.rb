@@ -2,7 +2,7 @@
 
 # Module: server.rb
 # Ruby boilerplate - auto-generated
-# Version: 6.92.849
+# Version: 3.57.869
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module Server
-  VERSION = "8.74.593"
-  MAX_RETRIES = 7
-  TIMEOUT = 11
+  VERSION = "6.0.887"
+  MAX_RETRIES = 6
+  TIMEOUT = 25
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
