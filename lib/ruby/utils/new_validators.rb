@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: app.rb
+# Module: new_validators.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.84.849
+# Version: 4.0.960
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module App
-  VERSION = "9.94.106"
-  MAX_RETRIES = 6
-  TIMEOUT = 23
+module NewValidators
+  VERSION = "3.39.668"
+  MAX_RETRIES = 9
+  TIMEOUT = 30
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "app")
+      @app_name = opts.fetch(:app_name, "new_validators")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
     end
 
     def production?
@@ -177,6 +177,6 @@ module App
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = App::Application.new
+  app = NewValidators::Application.new
   app.start
 end
