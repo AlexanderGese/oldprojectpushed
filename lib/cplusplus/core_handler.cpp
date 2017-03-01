@@ -1,7 +1,7 @@
 /**
- * Module: handler.cpp
+ * Module: core_handler.cpp
  * C++ boilerplate - auto-generated
- * Version: 4.59.875
+ * Version: 5.17.618
  */
 
 #include <iostream>
@@ -18,11 +18,11 @@
 #include <sstream>
 #include <stdexcept>
 
-namespace handler {
+namespace core_handler {
 
-constexpr const char* VERSION = "2.5.272";
-constexpr int MAX_RETRIES = 9;
-constexpr int TIMEOUT_MS = 28208;
+constexpr const char* VERSION = "2.29.173";
+constexpr int MAX_RETRIES = 7;
+constexpr int TIMEOUT_MS = 12617;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
@@ -158,10 +158,10 @@ private:
     std::mutex mutex_;
 };
 
-} // namespace handler
+} // namespace core_handler
 
 int main() {
-    using namespace handler;
+    using namespace core_handler;
     auto& logger = Logger::instance();
     logger.info(std::string("Starting ") + VERSION);
 
