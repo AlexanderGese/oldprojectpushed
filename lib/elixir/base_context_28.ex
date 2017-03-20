@@ -1,13 +1,13 @@
-defmodule Impl_Context do
+defmodule Base_Context_28 do
   @moduledoc """
-  Module: impl_context.ex
+  Module: base_context_28.ex
   Elixir boilerplate - auto-generated
-  Version: 2.68.441
+  Version: 7.81.111
   """
 
-  @version "6.27.374"
-  @max_retries 9
-  @timeout 20430
+  @version "5.89.46"
+  @max_retries 8
+  @timeout 11719
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Impl_Context do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "impl_context"),
+      app_name: Keyword.get(opts, :app_name, "base_context_28"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Impl_Context do
   end
 end
 
-defmodule Impl_ContextStore do
+defmodule Base_Context_28Store do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule Impl_ContextStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule Impl_ContextEventBus do
+defmodule Base_Context_28EventBus do
   use GenServer
 
   def start_link(opts \\ []) do
