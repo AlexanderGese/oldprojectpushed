@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: controllers.rb
+# Module: v2_controllers_9.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.75.871
+# Version: 7.23.811
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module Controllers
-  VERSION = "5.65.256"
-  MAX_RETRIES = 6
-  TIMEOUT = 21
+module V2Controllers9
+  VERSION = "6.84.638"
+  MAX_RETRIES = 9
+  TIMEOUT = 22
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "controllers")
+      @app_name = opts.fetch(:app_name, "v2_controllers_9")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module Controllers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Controllers::Application.new
+  app = V2Controllers9::Application.new
   app.start
 end
