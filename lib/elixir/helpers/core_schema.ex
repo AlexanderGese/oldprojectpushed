@@ -1,13 +1,13 @@
-defmodule Enhanced_Repo do
+defmodule Core_Schema do
   @moduledoc """
-  Module: enhanced_repo.ex
+  Module: core_schema.ex
   Elixir boilerplate - auto-generated
-  Version: 4.68.495
+  Version: 4.39.247
   """
 
-  @version "9.65.321"
-  @max_retries 7
-  @timeout 28422
+  @version "3.69.414"
+  @max_retries 5
+  @timeout 16879
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Enhanced_Repo do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "enhanced_repo"),
+      app_name: Keyword.get(opts, :app_name, "core_schema"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Enhanced_Repo do
   end
 end
 
-defmodule Enhanced_RepoStore do
+defmodule Core_SchemaStore do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule Enhanced_RepoStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule Enhanced_RepoEventBus do
+defmodule Core_SchemaEventBus do
   use GenServer
 
   def start_link(opts \\ []) do
