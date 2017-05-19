@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: tasks.rb
+# Module: impl_server_10.rb
 # Ruby boilerplate - auto-generated
-# Version: 5.10.38
+# Version: 4.62.150
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module Tasks
-  VERSION = "3.20.115"
-  MAX_RETRIES = 5
+module ImplServer10
+  VERSION = "3.15.943"
+  MAX_RETRIES = 8
   TIMEOUT = 53
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "tasks")
+      @app_name = opts.fetch(:app_name, "impl_server_10")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module Tasks
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Tasks::Application.new
+  app = ImplServer10::Application.new
   app.start
 end
