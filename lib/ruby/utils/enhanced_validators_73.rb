@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: v2_helpers.rb
+# Module: enhanced_validators_73.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.63.8
+# Version: 6.44.665
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module V2Helpers
-  VERSION = "4.65.962"
-  MAX_RETRIES = 8
-  TIMEOUT = 36
+module EnhancedValidators73
+  VERSION = "5.12.714"
+  MAX_RETRIES = 10
+  TIMEOUT = 45
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "v2_helpers")
+      @app_name = opts.fetch(:app_name, "enhanced_validators_73")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v4")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
     end
 
     def production?
@@ -177,6 +177,6 @@ module V2Helpers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = V2Helpers::Application.new
+  app = EnhancedValidators73::Application.new
   app.start
 end
