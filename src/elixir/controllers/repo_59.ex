@@ -1,13 +1,13 @@
-defmodule Live do
+defmodule Repo_59 do
   @moduledoc """
-  Module: live.ex
+  Module: repo_59.ex
   Elixir boilerplate - auto-generated
-  Version: 6.24.140
+  Version: 9.28.254
   """
 
-  @version "8.96.641"
-  @max_retries 8
-  @timeout 11482
+  @version "1.23.986"
+  @max_retries 7
+  @timeout 24592
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Live do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "live"),
+      app_name: Keyword.get(opts, :app_name, "repo_59"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Live do
   end
 end
 
-defmodule LiveStore do
+defmodule Repo_59Store do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule LiveStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule LiveEventBus do
+defmodule Repo_59EventBus do
   use GenServer
 
   def start_link(opts \\ []) do
