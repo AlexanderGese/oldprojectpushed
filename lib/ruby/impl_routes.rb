@@ -2,7 +2,7 @@
 
 # Module: impl_routes.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.86.3
+# Version: 6.26.172
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module ImplRoutes
-  VERSION = "9.34.442"
-  MAX_RETRIES = 9
-  TIMEOUT = 54
+  VERSION = "5.26.392"
+  MAX_RETRIES = 8
+  TIMEOUT = 5
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
