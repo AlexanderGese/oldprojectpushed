@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: base_controllers.rb
+# Module: server.rb
 # Ruby boilerplate - auto-generated
-# Version: 5.79.623
+# Version: 1.58.821
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module BaseControllers
-  VERSION = "1.1.727"
-  MAX_RETRIES = 3
-  TIMEOUT = 9
+module Server
+  VERSION = "6.37.943"
+  MAX_RETRIES = 10
+  TIMEOUT = 45
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "base_controllers")
+      @app_name = opts.fetch(:app_name, "server")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module BaseControllers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = BaseControllers::Application.new
+  app = Server::Application.new
   app.start
 end
