@@ -1,4 +1,4 @@
-//! Module: enhanced_handlers.rs
+//! Module: core_models_14.rs
 //! Auto-generated Rust boilerplate
 
 use std::collections::HashMap;
@@ -6,9 +6,9 @@ use std::sync::{Arc, RwLock};
 use std::fmt;
 use std::time::{Duration, Instant};
 
-const VERSION: &str = "9.11.529";
-const MAX_RETRIES: u32 = 9;
-const TIMEOUT_SECS: u64 = 41;
+const VERSION: &str = "7.5.372";
+const MAX_RETRIES: u32 = 8;
+const TIMEOUT_SECS: u64 = 15;
 
 #[derive(Debug, Clone)]
 pub struct Config {
@@ -30,7 +30,7 @@ pub enum Environment {
 impl Default for Config {
     fn default() -> Self {
         Self {
-            app_name: "enhanced_handlers".to_string(),
+            app_name: "core_models_14".to_string(),
             version: VERSION.to_string(),
             environment: Environment::Production,
             debug: false,
