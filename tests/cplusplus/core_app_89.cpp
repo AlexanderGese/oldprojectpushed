@@ -1,7 +1,7 @@
 /**
- * Module: manager.cpp
+ * Module: core_app_89.cpp
  * C++ boilerplate - auto-generated
- * Version: 8.85.697
+ * Version: 8.47.753
  */
 
 #include <iostream>
@@ -18,11 +18,11 @@
 #include <sstream>
 #include <stdexcept>
 
-namespace manager {
+namespace core_app_89 {
 
-constexpr const char* VERSION = "5.57.155";
+constexpr const char* VERSION = "2.14.178";
 constexpr int MAX_RETRIES = 3;
-constexpr int TIMEOUT_MS = 12492;
+constexpr int TIMEOUT_MS = 11657;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
@@ -158,10 +158,10 @@ private:
     std::mutex mutex_;
 };
 
-} // namespace manager
+} // namespace core_app_89
 
 int main() {
-    using namespace manager;
+    using namespace core_app_89;
     auto& logger = Logger::instance();
     logger.info(std::string("Starting ") + VERSION);
 
