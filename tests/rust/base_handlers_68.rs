@@ -1,4 +1,4 @@
-//! Module: middleware.rs
+//! Module: base_handlers_68.rs
 //! Auto-generated Rust boilerplate
 
 use std::collections::HashMap;
@@ -6,9 +6,9 @@ use std::sync::{Arc, RwLock};
 use std::fmt;
 use std::time::{Duration, Instant};
 
-const VERSION: &str = "9.3.625";
-const MAX_RETRIES: u32 = 8;
-const TIMEOUT_SECS: u64 = 59;
+const VERSION: &str = "2.83.774";
+const MAX_RETRIES: u32 = 3;
+const TIMEOUT_SECS: u64 = 6;
 
 #[derive(Debug, Clone)]
 pub struct Config {
@@ -30,7 +30,7 @@ pub enum Environment {
 impl Default for Config {
     fn default() -> Self {
         Self {
-            app_name: "middleware".to_string(),
+            app_name: "base_handlers_68".to_string(),
             version: VERSION.to_string(),
             environment: Environment::Production,
             debug: false,
