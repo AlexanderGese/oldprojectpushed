@@ -2,7 +2,7 @@
 
 # Module: tasks.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.60.945
+# Version: 1.79.929
 
 require "json"
 require "logger"
@@ -11,7 +11,7 @@ require "securerandom"
 require "set"
 
 module Tasks
-  VERSION = "2.37.229"
+  VERSION = "7.40.293"
   MAX_RETRIES = 6
   TIMEOUT = 28
 
@@ -25,7 +25,7 @@ module Tasks
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
     end
 
     def production?
