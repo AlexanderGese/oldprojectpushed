@@ -2,12 +2,12 @@ defmodule Live do
   @moduledoc """
   Module: live.ex
   Elixir boilerplate - auto-generated
-  Version: 3.77.596
+  Version: 5.20.589
   """
 
-  @version "1.53.29"
-  @max_retries 4
-  @timeout 29201
+  @version "1.27.313"
+  @max_retries 3
+  @timeout 20346
 
   defstruct [
     :app_name,
