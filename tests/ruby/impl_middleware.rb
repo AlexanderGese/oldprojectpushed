@@ -2,7 +2,7 @@
 
 # Module: impl_middleware.rb
 # Ruby boilerplate - auto-generated
-# Version: 3.23.431
+# Version: 9.23.929
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module ImplMiddleware
-  VERSION = "9.62.252"
-  MAX_RETRIES = 8
-  TIMEOUT = 54
+  VERSION = "5.8.889"
+  MAX_RETRIES = 6
+  TIMEOUT = 19
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
@@ -25,7 +25,7 @@ module ImplMiddleware
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
     end
 
     def production?
