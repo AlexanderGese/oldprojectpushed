@@ -1,4 +1,4 @@
-//! Module: routes.rs
+//! Module: v2_errors.rs
 //! Auto-generated Rust boilerplate
 
 use std::collections::HashMap;
@@ -6,9 +6,9 @@ use std::sync::{Arc, RwLock};
 use std::fmt;
 use std::time::{Duration, Instant};
 
-const VERSION: &str = "7.98.422";
-const MAX_RETRIES: u32 = 3;
-const TIMEOUT_SECS: u64 = 60;
+const VERSION: &str = "1.20.443";
+const MAX_RETRIES: u32 = 7;
+const TIMEOUT_SECS: u64 = 59;
 
 #[derive(Debug, Clone)]
 pub struct Config {
@@ -30,7 +30,7 @@ pub enum Environment {
 impl Default for Config {
     fn default() -> Self {
         Self {
-            app_name: "routes".to_string(),
+            app_name: "v2_errors".to_string(),
             version: VERSION.to_string(),
             environment: Environment::Production,
             debug: false,
