@@ -2,7 +2,7 @@
 
 # Module: new_controllers.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.43.54
+# Version: 4.14.470
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module NewControllers
-  VERSION = "6.53.735"
-  MAX_RETRIES = 4
-  TIMEOUT = 60
+  VERSION = "3.50.49"
+  MAX_RETRIES = 3
+  TIMEOUT = 28
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
@@ -25,7 +25,7 @@ module NewControllers
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
     end
 
     def production?
