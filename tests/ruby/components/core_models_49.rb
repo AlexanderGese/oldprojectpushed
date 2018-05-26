@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: config.rb
+# Module: core_models_49.rb
 # Ruby boilerplate - auto-generated
-# Version: 9.64.313
+# Version: 7.66.330
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module Config
-  VERSION = "4.30.150"
-  MAX_RETRIES = 6
-  TIMEOUT = 25
+module CoreModels49
+  VERSION = "6.1.254"
+  MAX_RETRIES = 5
+  TIMEOUT = 18
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "config")
+      @app_name = opts.fetch(:app_name, "core_models_49")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module Config
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Config::Application.new
+  app = CoreModels49::Application.new
   app.start
 end
