@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: enhanced_helpers.rb
+# Module: enhanced_controllers_64.rb
 # Ruby boilerplate - auto-generated
-# Version: 6.42.582
+# Version: 3.18.525
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module EnhancedHelpers
-  VERSION = "7.46.266"
-  MAX_RETRIES = 4
-  TIMEOUT = 31
+module EnhancedControllers64
+  VERSION = "2.2.600"
+  MAX_RETRIES = 10
+  TIMEOUT = 28
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "enhanced_helpers")
+      @app_name = opts.fetch(:app_name, "enhanced_controllers_64")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v4")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
     end
 
     def production?
@@ -177,6 +177,6 @@ module EnhancedHelpers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = EnhancedHelpers::Application.new
+  app = EnhancedControllers64::Application.new
   app.start
 end
