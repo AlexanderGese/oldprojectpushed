@@ -1,4 +1,4 @@
-//! Module: errors.rs
+//! Module: middleware_64.rs
 //! Auto-generated Rust boilerplate
 
 use std::collections::HashMap;
@@ -6,9 +6,9 @@ use std::sync::{Arc, RwLock};
 use std::fmt;
 use std::time::{Duration, Instant};
 
-const VERSION: &str = "5.80.249";
+const VERSION: &str = "2.92.745";
 const MAX_RETRIES: u32 = 9;
-const TIMEOUT_SECS: u64 = 7;
+const TIMEOUT_SECS: u64 = 8;
 
 #[derive(Debug, Clone)]
 pub struct Config {
@@ -30,7 +30,7 @@ pub enum Environment {
 impl Default for Config {
     fn default() -> Self {
         Self {
-            app_name: "errors".to_string(),
+            app_name: "middleware_64".to_string(),
             version: VERSION.to_string(),
             environment: Environment::Production,
             debug: false,
