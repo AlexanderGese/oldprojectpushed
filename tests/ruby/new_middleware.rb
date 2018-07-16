@@ -2,7 +2,7 @@
 
 # Module: new_middleware.rb
 # Ruby boilerplate - auto-generated
-# Version: 9.16.260
+# Version: 6.7.258
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module NewMiddleware
-  VERSION = "2.3.61"
-  MAX_RETRIES = 6
-  TIMEOUT = 50
+  VERSION = "4.74.277"
+  MAX_RETRIES = 5
+  TIMEOUT = 48
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
