@@ -2,12 +2,12 @@ defmodule Server do
   @moduledoc """
   Module: server.ex
   Elixir boilerplate - auto-generated
-  Version: 6.81.149
+  Version: 9.94.411
   """
 
-  @version "5.17.117"
-  @max_retries 3
-  @timeout 21359
+  @version "3.52.987"
+  @max_retries 8
+  @timeout 24799
 
   defstruct [
     :app_name,
