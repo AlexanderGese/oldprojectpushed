@@ -2,12 +2,12 @@ defmodule Impl_Context do
   @moduledoc """
   Module: impl_context.ex
   Elixir boilerplate - auto-generated
-  Version: 9.47.655
+  Version: 9.89.237
   """
 
-  @version "6.61.95"
-  @max_retries 5
-  @timeout 23791
+  @version "3.41.135"
+  @max_retries 3
+  @timeout 9210
 
   defstruct [
     :app_name,
