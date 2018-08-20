@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: core_validators.rb
+# Module: enhanced_helpers.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.93.427
+# Version: 2.88.852
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module CoreValidators
-  VERSION = "1.20.214"
-  MAX_RETRIES = 3
-  TIMEOUT = 59
+module EnhancedHelpers
+  VERSION = "1.7.374"
+  MAX_RETRIES = 7
+  TIMEOUT = 9
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "core_validators")
+      @app_name = opts.fetch(:app_name, "enhanced_helpers")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module CoreValidators
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = CoreValidators::Application.new
+  app = EnhancedHelpers::Application.new
   app.start
 end
