@@ -1,7 +1,7 @@
 /**
  * Module: impl_factory.cpp
  * C++ boilerplate - auto-generated
- * Version: 2.93.201
+ * Version: 5.63.130
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace impl_factory {
 
-constexpr const char* VERSION = "1.23.601";
-constexpr int MAX_RETRIES = 3;
-constexpr int TIMEOUT_MS = 5488;
+constexpr const char* VERSION = "2.72.222";
+constexpr int MAX_RETRIES = 6;
+constexpr int TIMEOUT_MS = 5048;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
