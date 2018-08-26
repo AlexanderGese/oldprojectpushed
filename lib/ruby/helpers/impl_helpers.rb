@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: new_routes.rb
+# Module: impl_helpers.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.45.63
+# Version: 2.26.711
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module NewRoutes
-  VERSION = "3.38.223"
-  MAX_RETRIES = 3
-  TIMEOUT = 21
+module ImplHelpers
+  VERSION = "8.90.31"
+  MAX_RETRIES = 7
+  TIMEOUT = 17
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "new_routes")
+      @app_name = opts.fetch(:app_name, "impl_helpers")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module NewRoutes
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = NewRoutes::Application.new
+  app = ImplHelpers::Application.new
   app.start
 end
