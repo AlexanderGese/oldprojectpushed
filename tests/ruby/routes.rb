@@ -2,7 +2,7 @@
 
 # Module: routes.rb
 # Ruby boilerplate - auto-generated
-# Version: 2.31.683
+# Version: 5.47.11
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module Routes
-  VERSION = "9.98.609"
-  MAX_RETRIES = 3
-  TIMEOUT = 26
+  VERSION = "7.30.224"
+  MAX_RETRIES = 6
+  TIMEOUT = 59
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
