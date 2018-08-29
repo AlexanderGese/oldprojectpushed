@@ -2,7 +2,7 @@
 
 # Module: v2_routes.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.29.622
+# Version: 6.26.543
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module V2Routes
-  VERSION = "9.31.458"
-  MAX_RETRIES = 6
-  TIMEOUT = 31
+  VERSION = "9.62.141"
+  MAX_RETRIES = 9
+  TIMEOUT = 50
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
@@ -25,7 +25,7 @@ module V2Routes
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v4")
     end
 
     def production?
