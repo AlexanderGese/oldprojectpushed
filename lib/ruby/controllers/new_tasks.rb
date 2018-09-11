@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: impl_middleware.rb
+# Module: new_tasks.rb
 # Ruby boilerplate - auto-generated
-# Version: 5.11.338
+# Version: 3.57.401
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module ImplMiddleware
-  VERSION = "5.10.210"
-  MAX_RETRIES = 9
-  TIMEOUT = 26
+module NewTasks
+  VERSION = "9.80.624"
+  MAX_RETRIES = 7
+  TIMEOUT = 43
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "impl_middleware")
+      @app_name = opts.fetch(:app_name, "new_tasks")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module ImplMiddleware
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = ImplMiddleware::Application.new
+  app = NewTasks::Application.new
   app.start
 end
