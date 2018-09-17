@@ -2,7 +2,7 @@
 
 # Module: impl_helpers.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.63.108
+# Version: 7.21.967
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module ImplHelpers
-  VERSION = "9.86.669"
-  MAX_RETRIES = 8
-  TIMEOUT = 22
+  VERSION = "7.95.63"
+  MAX_RETRIES = 7
+  TIMEOUT = 31
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
