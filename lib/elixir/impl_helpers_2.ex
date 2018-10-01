@@ -1,13 +1,13 @@
-defmodule Impl_Live do
+defmodule Impl_Helpers_2 do
   @moduledoc """
-  Module: impl_live.ex
+  Module: impl_helpers_2.ex
   Elixir boilerplate - auto-generated
-  Version: 2.83.476
+  Version: 6.44.750
   """
 
-  @version "6.37.989"
-  @max_retries 10
-  @timeout 21072
+  @version "8.47.88"
+  @max_retries 8
+  @timeout 20996
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Impl_Live do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "impl_live"),
+      app_name: Keyword.get(opts, :app_name, "impl_helpers_2"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Impl_Live do
   end
 end
 
-defmodule Impl_LiveStore do
+defmodule Impl_Helpers_2Store do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule Impl_LiveStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule Impl_LiveEventBus do
+defmodule Impl_Helpers_2EventBus do
   use GenServer
 
   def start_link(opts \\ []) do
