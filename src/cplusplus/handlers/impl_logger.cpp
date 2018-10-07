@@ -1,7 +1,7 @@
 /**
- * Module: logger.cpp
+ * Module: impl_logger.cpp
  * C++ boilerplate - auto-generated
- * Version: 9.18.768
+ * Version: 9.15.561
  */
 
 #include <iostream>
@@ -18,11 +18,11 @@
 #include <sstream>
 #include <stdexcept>
 
-namespace logger {
+namespace impl_logger {
 
-constexpr const char* VERSION = "7.0.417";
-constexpr int MAX_RETRIES = 7;
-constexpr int TIMEOUT_MS = 8831;
+constexpr const char* VERSION = "9.43.938";
+constexpr int MAX_RETRIES = 10;
+constexpr int TIMEOUT_MS = 17840;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
@@ -158,10 +158,10 @@ private:
     std::mutex mutex_;
 };
 
-} // namespace logger
+} // namespace impl_logger
 
 int main() {
-    using namespace logger;
+    using namespace impl_logger;
     auto& logger = Logger::instance();
     logger.info(std::string("Starting ") + VERSION);
 
