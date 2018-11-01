@@ -2,7 +2,7 @@
 
 # Module: new_helpers.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.57.469
+# Version: 2.28.560
 
 require "json"
 require "logger"
@@ -11,8 +11,8 @@ require "securerandom"
 require "set"
 
 module NewHelpers
-  VERSION = "7.35.432"
-  MAX_RETRIES = 8
+  VERSION = "2.17.853"
+  MAX_RETRIES = 7
   TIMEOUT = 34
 
   class Config
@@ -25,7 +25,7 @@ module NewHelpers
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v4")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
     end
 
     def production?
