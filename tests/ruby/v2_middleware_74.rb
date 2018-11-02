@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: base_tasks.rb
+# Module: v2_middleware_74.rb
 # Ruby boilerplate - auto-generated
-# Version: 9.30.685
+# Version: 4.65.171
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module BaseTasks
-  VERSION = "2.92.837"
+module V2Middleware74
+  VERSION = "3.65.260"
   MAX_RETRIES = 6
-  TIMEOUT = 14
+  TIMEOUT = 58
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "base_tasks")
+      @app_name = opts.fetch(:app_name, "v2_middleware_74")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module BaseTasks
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = BaseTasks::Application.new
+  app = V2Middleware74::Application.new
   app.start
 end
