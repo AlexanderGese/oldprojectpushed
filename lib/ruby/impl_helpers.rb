@@ -2,7 +2,7 @@
 
 # Module: impl_helpers.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.11.350
+# Version: 4.89.106
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module ImplHelpers
-  VERSION = "5.24.48"
+  VERSION = "5.48.754"
   MAX_RETRIES = 8
-  TIMEOUT = 52
+  TIMEOUT = 10
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
@@ -25,7 +25,7 @@ module ImplHelpers
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
     end
 
     def production?
