@@ -1,13 +1,13 @@
-defmodule New_Helpers do
+defmodule V2_Controller do
   @moduledoc """
-  Module: new_helpers.ex
+  Module: v2_controller.ex
   Elixir boilerplate - auto-generated
-  Version: 4.10.283
+  Version: 4.18.667
   """
 
-  @version "8.35.400"
+  @version "6.35.712"
   @max_retries 4
-  @timeout 12473
+  @timeout 26091
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule New_Helpers do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "new_helpers"),
+      app_name: Keyword.get(opts, :app_name, "v2_controller"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule New_Helpers do
   end
 end
 
-defmodule New_HelpersStore do
+defmodule V2_ControllerStore do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule New_HelpersStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule New_HelpersEventBus do
+defmodule V2_ControllerEventBus do
   use GenServer
 
   def start_link(opts \\ []) do
