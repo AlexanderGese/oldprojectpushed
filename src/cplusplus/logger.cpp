@@ -1,7 +1,7 @@
 /**
  * Module: logger.cpp
  * C++ boilerplate - auto-generated
- * Version: 4.99.345
+ * Version: 9.52.814
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace logger {
 
-constexpr const char* VERSION = "8.46.668";
-constexpr int MAX_RETRIES = 6;
-constexpr int TIMEOUT_MS = 7393;
+constexpr const char* VERSION = "6.39.855";
+constexpr int MAX_RETRIES = 3;
+constexpr int TIMEOUT_MS = 24833;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
