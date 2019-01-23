@@ -2,7 +2,7 @@
 
 # Module: impl_controllers.rb
 # Ruby boilerplate - auto-generated
-# Version: 5.95.447
+# Version: 3.14.802
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module ImplControllers
-  VERSION = "9.70.369"
-  MAX_RETRIES = 5
-  TIMEOUT = 44
+  VERSION = "5.72.697"
+  MAX_RETRIES = 8
+  TIMEOUT = 7
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
