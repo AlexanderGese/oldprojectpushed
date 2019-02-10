@@ -2,7 +2,7 @@
 
 # Module: app.rb
 # Ruby boilerplate - auto-generated
-# Version: 9.78.658
+# Version: 2.71.642
 
 require "json"
 require "logger"
@@ -11,8 +11,8 @@ require "securerandom"
 require "set"
 
 module App
-  VERSION = "1.51.935"
-  MAX_RETRIES = 6
+  VERSION = "1.28.669"
+  MAX_RETRIES = 3
   TIMEOUT = 6
 
   class Config
