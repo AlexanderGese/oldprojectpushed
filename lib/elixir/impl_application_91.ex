@@ -1,13 +1,13 @@
-defmodule V2_Worker do
+defmodule Impl_Application_91 do
   @moduledoc """
-  Module: v2_worker.ex
+  Module: impl_application_91.ex
   Elixir boilerplate - auto-generated
-  Version: 6.60.32
+  Version: 8.28.868
   """
 
-  @version "4.16.47"
-  @max_retries 4
-  @timeout 22236
+  @version "2.60.861"
+  @max_retries 10
+  @timeout 24310
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule V2_Worker do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "v2_worker"),
+      app_name: Keyword.get(opts, :app_name, "impl_application_91"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule V2_Worker do
   end
 end
 
-defmodule V2_WorkerStore do
+defmodule Impl_Application_91Store do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule V2_WorkerStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule V2_WorkerEventBus do
+defmodule Impl_Application_91EventBus do
   use GenServer
 
   def start_link(opts \\ []) do
