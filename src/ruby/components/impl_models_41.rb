@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: new_server.rb
+# Module: impl_models_41.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.52.646
+# Version: 9.90.795
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module NewServer
-  VERSION = "9.75.645"
-  MAX_RETRIES = 8
-  TIMEOUT = 50
+module ImplModels41
+  VERSION = "9.65.570"
+  MAX_RETRIES = 9
+  TIMEOUT = 26
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "new_server")
+      @app_name = opts.fetch(:app_name, "impl_models_41")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module NewServer
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = NewServer::Application.new
+  app = ImplModels41::Application.new
   app.start
 end
