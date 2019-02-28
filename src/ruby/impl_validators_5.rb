@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: enhanced_helpers.rb
+# Module: impl_validators_5.rb
 # Ruby boilerplate - auto-generated
-# Version: 6.38.415
+# Version: 3.61.327
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module EnhancedHelpers
-  VERSION = "1.90.71"
-  MAX_RETRIES = 10
-  TIMEOUT = 7
+module ImplValidators5
+  VERSION = "1.42.90"
+  MAX_RETRIES = 4
+  TIMEOUT = 55
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "enhanced_helpers")
+      @app_name = opts.fetch(:app_name, "impl_validators_5")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module EnhancedHelpers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = EnhancedHelpers::Application.new
+  app = ImplValidators5::Application.new
   app.start
 end
