@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: impl_routes.rb
+# Module: config.rb
 # Ruby boilerplate - auto-generated
-# Version: 9.85.512
+# Version: 1.87.406
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module ImplRoutes
-  VERSION = "4.43.78"
-  MAX_RETRIES = 4
-  TIMEOUT = 13
+module Config
+  VERSION = "8.93.12"
+  MAX_RETRIES = 8
+  TIMEOUT = 27
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "impl_routes")
+      @app_name = opts.fetch(:app_name, "config")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
     end
 
     def production?
@@ -177,6 +177,6 @@ module ImplRoutes
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = ImplRoutes::Application.new
+  app = Config::Application.new
   app.start
 end
