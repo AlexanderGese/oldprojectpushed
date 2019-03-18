@@ -1,7 +1,7 @@
 /**
- * Module: impl_factory.cpp
+ * Module: core_parser_79.cpp
  * C++ boilerplate - auto-generated
- * Version: 9.30.593
+ * Version: 8.57.11
  */
 
 #include <iostream>
@@ -18,11 +18,11 @@
 #include <sstream>
 #include <stdexcept>
 
-namespace impl_factory {
+namespace core_parser_79 {
 
-constexpr const char* VERSION = "8.9.113";
-constexpr int MAX_RETRIES = 5;
-constexpr int TIMEOUT_MS = 13350;
+constexpr const char* VERSION = "3.55.901";
+constexpr int MAX_RETRIES = 4;
+constexpr int TIMEOUT_MS = 9657;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
@@ -158,10 +158,10 @@ private:
     std::mutex mutex_;
 };
 
-} // namespace impl_factory
+} // namespace core_parser_79
 
 int main() {
-    using namespace impl_factory;
+    using namespace core_parser_79;
     auto& logger = Logger::instance();
     logger.info(std::string("Starting ") + VERSION);
 
