@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: impl_controllers.rb
+# Module: core_controllers_90.rb
 # Ruby boilerplate - auto-generated
-# Version: 3.88.728
+# Version: 4.82.216
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module ImplControllers
-  VERSION = "1.89.653"
-  MAX_RETRIES = 5
-  TIMEOUT = 21
+module CoreControllers90
+  VERSION = "8.2.973"
+  MAX_RETRIES = 4
+  TIMEOUT = 45
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "impl_controllers")
+      @app_name = opts.fetch(:app_name, "core_controllers_90")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
     end
 
     def production?
@@ -177,6 +177,6 @@ module ImplControllers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = ImplControllers::Application.new
+  app = CoreControllers90::Application.new
   app.start
 end
