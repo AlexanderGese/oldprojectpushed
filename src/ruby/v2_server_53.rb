@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: v2_routes.rb
+# Module: v2_server_53.rb
 # Ruby boilerplate - auto-generated
-# Version: 5.23.819
+# Version: 6.86.610
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module V2Routes
-  VERSION = "2.8.92"
-  MAX_RETRIES = 4
-  TIMEOUT = 51
+module V2Server53
+  VERSION = "8.74.258"
+  MAX_RETRIES = 8
+  TIMEOUT = 49
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "v2_routes")
+      @app_name = opts.fetch(:app_name, "v2_server_53")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module V2Routes
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = V2Routes::Application.new
+  app = V2Server53::Application.new
   app.start
 end
