@@ -1,7 +1,7 @@
 /**
  * Module: v2_app.cpp
  * C++ boilerplate - auto-generated
- * Version: 7.54.822
+ * Version: 8.24.664
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace v2_app {
 
-constexpr const char* VERSION = "8.46.279";
-constexpr int MAX_RETRIES = 7;
-constexpr int TIMEOUT_MS = 18110;
+constexpr const char* VERSION = "8.12.843";
+constexpr int MAX_RETRIES = 8;
+constexpr int TIMEOUT_MS = 21901;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
