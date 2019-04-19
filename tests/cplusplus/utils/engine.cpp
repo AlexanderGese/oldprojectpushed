@@ -1,7 +1,7 @@
 /**
  * Module: engine.cpp
  * C++ boilerplate - auto-generated
- * Version: 6.8.769
+ * Version: 8.86.649
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace engine {
 
-constexpr const char* VERSION = "1.60.819";
-constexpr int MAX_RETRIES = 9;
-constexpr int TIMEOUT_MS = 20279;
+constexpr const char* VERSION = "8.79.599";
+constexpr int MAX_RETRIES = 5;
+constexpr int TIMEOUT_MS = 10900;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
