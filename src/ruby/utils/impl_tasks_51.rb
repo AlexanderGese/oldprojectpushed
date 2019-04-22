@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: models.rb
+# Module: impl_tasks_51.rb
 # Ruby boilerplate - auto-generated
-# Version: 2.6.128
+# Version: 9.35.547
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module Models
-  VERSION = "8.24.228"
-  MAX_RETRIES = 8
-  TIMEOUT = 51
+module ImplTasks51
+  VERSION = "5.24.34"
+  MAX_RETRIES = 4
+  TIMEOUT = 20
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "models")
+      @app_name = opts.fetch(:app_name, "impl_tasks_51")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module Models
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Models::Application.new
+  app = ImplTasks51::Application.new
   app.start
 end
