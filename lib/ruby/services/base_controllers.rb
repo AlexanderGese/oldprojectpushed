@@ -2,7 +2,7 @@
 
 # Module: base_controllers.rb
 # Ruby boilerplate - auto-generated
-# Version: 8.98.154
+# Version: 2.16.72
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module BaseControllers
-  VERSION = "2.92.26"
-  MAX_RETRIES = 3
-  TIMEOUT = 55
+  VERSION = "5.56.946"
+  MAX_RETRIES = 4
+  TIMEOUT = 17
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
