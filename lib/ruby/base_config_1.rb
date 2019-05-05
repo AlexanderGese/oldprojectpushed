@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: v2_controllers.rb
+# Module: base_config_1.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.4.711
+# Version: 2.77.833
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module V2Controllers
-  VERSION = "5.5.374"
-  MAX_RETRIES = 4
-  TIMEOUT = 34
+module BaseConfig1
+  VERSION = "6.63.832"
+  MAX_RETRIES = 6
+  TIMEOUT = 6
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "v2_controllers")
+      @app_name = opts.fetch(:app_name, "base_config_1")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v4")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
     end
 
     def production?
@@ -177,6 +177,6 @@ module V2Controllers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = V2Controllers::Application.new
+  app = BaseConfig1::Application.new
   app.start
 end
