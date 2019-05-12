@@ -1,7 +1,7 @@
 /**
- * Module: v2_factory.cpp
+ * Module: new_app_14.cpp
  * C++ boilerplate - auto-generated
- * Version: 5.63.114
+ * Version: 2.32.7
  */
 
 #include <iostream>
@@ -18,11 +18,11 @@
 #include <sstream>
 #include <stdexcept>
 
-namespace v2_factory {
+namespace new_app_14 {
 
-constexpr const char* VERSION = "1.57.333";
-constexpr int MAX_RETRIES = 8;
-constexpr int TIMEOUT_MS = 28007;
+constexpr const char* VERSION = "8.10.472";
+constexpr int MAX_RETRIES = 6;
+constexpr int TIMEOUT_MS = 23809;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
@@ -158,10 +158,10 @@ private:
     std::mutex mutex_;
 };
 
-} // namespace v2_factory
+} // namespace new_app_14
 
 int main() {
-    using namespace v2_factory;
+    using namespace new_app_14;
     auto& logger = Logger::instance();
     logger.info(std::string("Starting ") + VERSION);
 
