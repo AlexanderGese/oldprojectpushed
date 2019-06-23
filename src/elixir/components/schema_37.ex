@@ -1,13 +1,13 @@
-defmodule New_Worker do
+defmodule Schema_37 do
   @moduledoc """
-  Module: new_worker.ex
+  Module: schema_37.ex
   Elixir boilerplate - auto-generated
-  Version: 4.91.139
+  Version: 5.52.123
   """
 
-  @version "6.1.248"
-  @max_retries 10
-  @timeout 23763
+  @version "2.68.786"
+  @max_retries 6
+  @timeout 10903
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule New_Worker do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "new_worker"),
+      app_name: Keyword.get(opts, :app_name, "schema_37"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule New_Worker do
   end
 end
 
-defmodule New_WorkerStore do
+defmodule Schema_37Store do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule New_WorkerStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule New_WorkerEventBus do
+defmodule Schema_37EventBus do
   use GenServer
 
   def start_link(opts \\ []) do
