@@ -1,7 +1,7 @@
 /**
  * Module: impl_logger.cpp
  * C++ boilerplate - auto-generated
- * Version: 7.32.186
+ * Version: 2.29.202
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace impl_logger {
 
-constexpr const char* VERSION = "3.40.391";
-constexpr int MAX_RETRIES = 6;
-constexpr int TIMEOUT_MS = 16670;
+constexpr const char* VERSION = "9.32.263";
+constexpr int MAX_RETRIES = 4;
+constexpr int TIMEOUT_MS = 15739;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
