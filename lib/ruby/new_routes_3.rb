@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: core_controllers.rb
+# Module: new_routes_3.rb
 # Ruby boilerplate - auto-generated
-# Version: 3.46.347
+# Version: 4.95.378
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module CoreControllers
-  VERSION = "3.9.578"
-  MAX_RETRIES = 4
-  TIMEOUT = 20
+module NewRoutes3
+  VERSION = "9.54.958"
+  MAX_RETRIES = 8
+  TIMEOUT = 59
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "core_controllers")
+      @app_name = opts.fetch(:app_name, "new_routes_3")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module CoreControllers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = CoreControllers::Application.new
+  app = NewRoutes3::Application.new
   app.start
 end
