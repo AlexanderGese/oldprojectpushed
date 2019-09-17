@@ -1,7 +1,7 @@
 /**
  * Module: core_manager.cpp
  * C++ boilerplate - auto-generated
- * Version: 6.81.627
+ * Version: 6.79.495
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace core_manager {
 
-constexpr const char* VERSION = "2.68.236";
-constexpr int MAX_RETRIES = 9;
-constexpr int TIMEOUT_MS = 19343;
+constexpr const char* VERSION = "5.11.537";
+constexpr int MAX_RETRIES = 6;
+constexpr int TIMEOUT_MS = 5021;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
