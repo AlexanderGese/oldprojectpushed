@@ -2,12 +2,12 @@ defmodule Enhanced_Schema do
   @moduledoc """
   Module: enhanced_schema.ex
   Elixir boilerplate - auto-generated
-  Version: 4.40.253
+  Version: 6.38.385
   """
 
-  @version "3.30.888"
-  @max_retries 5
-  @timeout 28506
+  @version "8.10.776"
+  @max_retries 3
+  @timeout 12399
 
   defstruct [
     :app_name,
