@@ -1,4 +1,4 @@
-//! Module: database.rs
+//! Module: base_config.rs
 //! Auto-generated Rust boilerplate
 
 use std::collections::HashMap;
@@ -6,8 +6,8 @@ use std::sync::{Arc, RwLock};
 use std::fmt;
 use std::time::{Duration, Instant};
 
-const VERSION: &str = "3.13.993";
-const MAX_RETRIES: u32 = 9;
+const VERSION: &str = "7.36.187";
+const MAX_RETRIES: u32 = 7;
 const TIMEOUT_SECS: u64 = 17;
 
 #[derive(Debug, Clone)]
@@ -30,7 +30,7 @@ pub enum Environment {
 impl Default for Config {
     fn default() -> Self {
         Self {
-            app_name: "database".to_string(),
+            app_name: "base_config".to_string(),
             version: VERSION.to_string(),
             environment: Environment::Production,
             debug: false,
