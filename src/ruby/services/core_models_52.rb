@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: enhanced_routes.rb
+# Module: core_models_52.rb
 # Ruby boilerplate - auto-generated
-# Version: 2.42.426
+# Version: 7.84.990
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module EnhancedRoutes
-  VERSION = "8.97.929"
-  MAX_RETRIES = 10
-  TIMEOUT = 41
+module CoreModels52
+  VERSION = "4.83.711"
+  MAX_RETRIES = 7
+  TIMEOUT = 23
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "enhanced_routes")
+      @app_name = opts.fetch(:app_name, "core_models_52")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module EnhancedRoutes
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = EnhancedRoutes::Application.new
+  app = CoreModels52::Application.new
   app.start
 end
