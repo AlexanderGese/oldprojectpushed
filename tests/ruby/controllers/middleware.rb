@@ -2,7 +2,7 @@
 
 # Module: middleware.rb
 # Ruby boilerplate - auto-generated
-# Version: 8.34.668
+# Version: 1.92.376
 
 require "json"
 require "logger"
@@ -11,7 +11,7 @@ require "securerandom"
 require "set"
 
 module Middleware
-  VERSION = "8.32.840"
+  VERSION = "6.87.832"
   MAX_RETRIES = 8
   TIMEOUT = 34
 
@@ -25,7 +25,7 @@ module Middleware
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
     end
 
     def production?
