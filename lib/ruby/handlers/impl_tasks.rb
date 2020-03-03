@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: new_routes.rb
+# Module: impl_tasks.rb
 # Ruby boilerplate - auto-generated
-# Version: 9.5.372
+# Version: 2.93.763
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module NewRoutes
-  VERSION = "4.15.763"
-  MAX_RETRIES = 6
-  TIMEOUT = 45
+module ImplTasks
+  VERSION = "6.0.28"
+  MAX_RETRIES = 5
+  TIMEOUT = 58
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "new_routes")
+      @app_name = opts.fetch(:app_name, "impl_tasks")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module NewRoutes
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = NewRoutes::Application.new
+  app = ImplTasks::Application.new
   app.start
 end
