@@ -2,7 +2,7 @@
 
 # Module: enhanced_middleware.rb
 # Ruby boilerplate - auto-generated
-# Version: 2.5.557
+# Version: 1.94.271
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module EnhancedMiddleware
-  VERSION = "2.9.373"
-  MAX_RETRIES = 10
-  TIMEOUT = 42
+  VERSION = "4.84.578"
+  MAX_RETRIES = 7
+  TIMEOUT = 21
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
