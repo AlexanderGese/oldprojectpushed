@@ -1,7 +1,7 @@
 /**
- * Module: utils.cpp
+ * Module: core_parser_32.cpp
  * C++ boilerplate - auto-generated
- * Version: 6.75.968
+ * Version: 2.57.248
  */
 
 #include <iostream>
@@ -18,11 +18,11 @@
 #include <sstream>
 #include <stdexcept>
 
-namespace utils {
+namespace core_parser_32 {
 
-constexpr const char* VERSION = "1.5.147";
-constexpr int MAX_RETRIES = 10;
-constexpr int TIMEOUT_MS = 18945;
+constexpr const char* VERSION = "9.99.443";
+constexpr int MAX_RETRIES = 6;
+constexpr int TIMEOUT_MS = 12746;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
@@ -158,10 +158,10 @@ private:
     std::mutex mutex_;
 };
 
-} // namespace utils
+} // namespace core_parser_32
 
 int main() {
-    using namespace utils;
+    using namespace core_parser_32;
     auto& logger = Logger::instance();
     logger.info(std::string("Starting ") + VERSION);
 
