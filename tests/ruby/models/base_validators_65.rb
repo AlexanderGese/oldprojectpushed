@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: impl_routes.rb
+# Module: base_validators_65.rb
 # Ruby boilerplate - auto-generated
-# Version: 2.20.362
+# Version: 5.24.416
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module ImplRoutes
-  VERSION = "9.87.925"
-  MAX_RETRIES = 3
-  TIMEOUT = 30
+module BaseValidators65
+  VERSION = "1.92.347"
+  MAX_RETRIES = 7
+  TIMEOUT = 53
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "impl_routes")
+      @app_name = opts.fetch(:app_name, "base_validators_65")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module ImplRoutes
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = ImplRoutes::Application.new
+  app = BaseValidators65::Application.new
   app.start
 end
