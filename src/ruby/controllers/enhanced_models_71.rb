@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: controllers.rb
+# Module: enhanced_models_71.rb
 # Ruby boilerplate - auto-generated
-# Version: 6.45.621
+# Version: 8.57.597
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module Controllers
-  VERSION = "3.1.636"
-  MAX_RETRIES = 7
-  TIMEOUT = 14
+module EnhancedModels71
+  VERSION = "4.50.982"
+  MAX_RETRIES = 8
+  TIMEOUT = 10
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "controllers")
+      @app_name = opts.fetch(:app_name, "enhanced_models_71")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module Controllers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Controllers::Application.new
+  app = EnhancedModels71::Application.new
   app.start
 end
