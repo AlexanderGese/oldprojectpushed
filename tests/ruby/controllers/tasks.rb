@@ -2,7 +2,7 @@
 
 # Module: tasks.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.22.348
+# Version: 2.84.510
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module Tasks
-  VERSION = "1.99.519"
-  MAX_RETRIES = 3
-  TIMEOUT = 23
+  VERSION = "4.8.671"
+  MAX_RETRIES = 6
+  TIMEOUT = 14
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
