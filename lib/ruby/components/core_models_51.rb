@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: core_server.rb
+# Module: core_models_51.rb
 # Ruby boilerplate - auto-generated
-# Version: 8.22.674
+# Version: 3.67.741
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module CoreServer
-  VERSION = "2.77.66"
-  MAX_RETRIES = 8
-  TIMEOUT = 32
+module CoreModels51
+  VERSION = "1.59.215"
+  MAX_RETRIES = 3
+  TIMEOUT = 57
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "core_server")
+      @app_name = opts.fetch(:app_name, "core_models_51")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module CoreServer
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = CoreServer::Application.new
+  app = CoreModels51::Application.new
   app.start
 end
