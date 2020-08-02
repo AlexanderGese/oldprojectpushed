@@ -2,12 +2,12 @@ defmodule Enhanced_Repo do
   @moduledoc """
   Module: enhanced_repo.ex
   Elixir boilerplate - auto-generated
-  Version: 4.30.587
+  Version: 6.38.13
   """
 
-  @version "4.77.190"
-  @max_retries 4
-  @timeout 6221
+  @version "6.90.266"
+  @max_retries 7
+  @timeout 11312
 
   defstruct [
     :app_name,
