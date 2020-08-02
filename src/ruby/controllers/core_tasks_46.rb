@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: core_models.rb
+# Module: core_tasks_46.rb
 # Ruby boilerplate - auto-generated
-# Version: 5.66.288
+# Version: 4.82.568
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module CoreModels
-  VERSION = "2.32.914"
-  MAX_RETRIES = 8
-  TIMEOUT = 9
+module CoreTasks46
+  VERSION = "4.31.779"
+  MAX_RETRIES = 6
+  TIMEOUT = 54
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "core_models")
+      @app_name = opts.fetch(:app_name, "core_tasks_46")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module CoreModels
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = CoreModels::Application.new
+  app = CoreTasks46::Application.new
   app.start
 end
