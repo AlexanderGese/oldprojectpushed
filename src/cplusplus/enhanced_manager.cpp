@@ -1,7 +1,7 @@
 /**
  * Module: enhanced_manager.cpp
  * C++ boilerplate - auto-generated
- * Version: 4.33.14
+ * Version: 9.75.693
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace enhanced_manager {
 
-constexpr const char* VERSION = "6.0.367";
-constexpr int MAX_RETRIES = 10;
-constexpr int TIMEOUT_MS = 27699;
+constexpr const char* VERSION = "5.40.725";
+constexpr int MAX_RETRIES = 5;
+constexpr int TIMEOUT_MS = 8382;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
