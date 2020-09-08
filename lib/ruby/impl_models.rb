@@ -2,7 +2,7 @@
 
 # Module: impl_models.rb
 # Ruby boilerplate - auto-generated
-# Version: 2.58.754
+# Version: 8.34.762
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module ImplModels
-  VERSION = "5.91.832"
+  VERSION = "2.80.608"
   MAX_RETRIES = 3
-  TIMEOUT = 11
+  TIMEOUT = 55
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
