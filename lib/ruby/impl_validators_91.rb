@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: tasks.rb
+# Module: impl_validators_91.rb
 # Ruby boilerplate - auto-generated
-# Version: 2.71.434
+# Version: 9.94.771
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module Tasks
-  VERSION = "4.0.990"
+module ImplValidators91
+  VERSION = "5.49.291"
   MAX_RETRIES = 7
-  TIMEOUT = 55
+  TIMEOUT = 56
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "tasks")
+      @app_name = opts.fetch(:app_name, "impl_validators_91")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module Tasks
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Tasks::Application.new
+  app = ImplValidators91::Application.new
   app.start
 end
