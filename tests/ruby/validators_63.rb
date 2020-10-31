@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: enhanced_models.rb
+# Module: validators_63.rb
 # Ruby boilerplate - auto-generated
-# Version: 8.43.396
+# Version: 9.13.991
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module EnhancedModels
-  VERSION = "1.73.682"
-  MAX_RETRIES = 4
-  TIMEOUT = 56
+module Validators63
+  VERSION = "4.42.820"
+  MAX_RETRIES = 3
+  TIMEOUT = 14
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "enhanced_models")
+      @app_name = opts.fetch(:app_name, "validators_63")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module EnhancedModels
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = EnhancedModels::Application.new
+  app = Validators63::Application.new
   app.start
 end

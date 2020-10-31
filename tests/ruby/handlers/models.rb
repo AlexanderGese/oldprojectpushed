@@ -2,7 +2,7 @@
 
 # Module: models.rb
 # Ruby boilerplate - auto-generated
-# Version: 6.11.563
+# Version: 8.55.827
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module Models
-  VERSION = "7.33.170"
-  MAX_RETRIES = 9
-  TIMEOUT = 24
+  VERSION = "9.34.46"
+  MAX_RETRIES = 7
+  TIMEOUT = 43
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
