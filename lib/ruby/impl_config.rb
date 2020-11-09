@@ -2,7 +2,7 @@
 
 # Module: impl_config.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.69.269
+# Version: 4.13.528
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module ImplConfig
-  VERSION = "1.42.525"
-  MAX_RETRIES = 10
-  TIMEOUT = 43
+  VERSION = "7.41.385"
+  MAX_RETRIES = 4
+  TIMEOUT = 57
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
