@@ -1,13 +1,13 @@
-defmodule Base_Schema do
+defmodule Core_Schema_89 do
   @moduledoc """
-  Module: base_schema.ex
+  Module: core_schema_89.ex
   Elixir boilerplate - auto-generated
-  Version: 1.90.335
+  Version: 9.33.830
   """
 
-  @version "2.62.114"
-  @max_retries 10
-  @timeout 26457
+  @version "1.33.950"
+  @max_retries 4
+  @timeout 29390
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Base_Schema do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "base_schema"),
+      app_name: Keyword.get(opts, :app_name, "core_schema_89"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Base_Schema do
   end
 end
 
-defmodule Base_SchemaStore do
+defmodule Core_Schema_89Store do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule Base_SchemaStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule Base_SchemaEventBus do
+defmodule Core_Schema_89EventBus do
   use GenServer
 
   def start_link(opts \\ []) do
