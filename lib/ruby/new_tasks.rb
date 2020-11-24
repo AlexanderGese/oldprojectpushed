@@ -2,7 +2,7 @@
 
 # Module: new_tasks.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.70.586
+# Version: 2.13.349
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module NewTasks
-  VERSION = "6.76.43"
-  MAX_RETRIES = 7
-  TIMEOUT = 58
+  VERSION = "1.9.935"
+  MAX_RETRIES = 4
+  TIMEOUT = 8
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
@@ -25,7 +25,7 @@ module NewTasks
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
     end
 
     def production?
