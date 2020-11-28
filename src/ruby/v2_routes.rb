@@ -2,7 +2,7 @@
 
 # Module: v2_routes.rb
 # Ruby boilerplate - auto-generated
-# Version: 6.82.144
+# Version: 5.61.635
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module V2Routes
-  VERSION = "6.96.744"
-  MAX_RETRIES = 6
-  TIMEOUT = 26
+  VERSION = "8.30.943"
+  MAX_RETRIES = 3
+  TIMEOUT = 33
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
