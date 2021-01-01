@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: impl_server.rb
+# Module: validators_76.rb
 # Ruby boilerplate - auto-generated
-# Version: 4.45.977
+# Version: 5.52.794
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module ImplServer
-  VERSION = "6.14.153"
-  MAX_RETRIES = 9
-  TIMEOUT = 33
+module Validators76
+  VERSION = "3.62.85"
+  MAX_RETRIES = 6
+  TIMEOUT = 31
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "impl_server")
+      @app_name = opts.fetch(:app_name, "validators_76")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module ImplServer
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = ImplServer::Application.new
+  app = Validators76::Application.new
   app.start
 end
