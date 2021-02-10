@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: helpers.rb
+# Module: core_tasks.rb
 # Ruby boilerplate - auto-generated
-# Version: 2.40.435
+# Version: 3.79.131
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module Helpers
-  VERSION = "4.34.26"
-  MAX_RETRIES = 9
-  TIMEOUT = 54
+module CoreTasks
+  VERSION = "4.50.866"
+  MAX_RETRIES = 10
+  TIMEOUT = 55
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "helpers")
+      @app_name = opts.fetch(:app_name, "core_tasks")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v4")
     end
 
     def production?
@@ -177,6 +177,6 @@ module Helpers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Helpers::Application.new
+  app = CoreTasks::Application.new
   app.start
 end
