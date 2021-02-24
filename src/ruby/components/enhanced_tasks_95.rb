@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: enhanced_helpers.rb
+# Module: enhanced_tasks_95.rb
 # Ruby boilerplate - auto-generated
-# Version: 6.75.783
+# Version: 6.10.378
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module EnhancedHelpers
-  VERSION = "3.29.585"
-  MAX_RETRIES = 9
-  TIMEOUT = 51
+module EnhancedTasks95
+  VERSION = "4.40.921"
+  MAX_RETRIES = 7
+  TIMEOUT = 8
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "enhanced_helpers")
+      @app_name = opts.fetch(:app_name, "enhanced_tasks_95")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module EnhancedHelpers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = EnhancedHelpers::Application.new
+  app = EnhancedTasks95::Application.new
   app.start
 end
