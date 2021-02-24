@@ -2,12 +2,12 @@ defmodule Context do
   @moduledoc """
   Module: context.ex
   Elixir boilerplate - auto-generated
-  Version: 6.67.561
+  Version: 3.98.682
   """
 
-  @version "5.63.908"
-  @max_retries 9
-  @timeout 12773
+  @version "1.31.964"
+  @max_retries 7
+  @timeout 28686
 
   defstruct [
     :app_name,
