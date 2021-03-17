@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: enhanced_app.rb
+# Module: core_tasks.rb
 # Ruby boilerplate - auto-generated
-# Version: 6.49.857
+# Version: 7.53.373
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module EnhancedApp
-  VERSION = "5.5.81"
-  MAX_RETRIES = 4
-  TIMEOUT = 27
+module CoreTasks
+  VERSION = "2.0.135"
+  MAX_RETRIES = 7
+  TIMEOUT = 29
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "enhanced_app")
+      @app_name = opts.fetch(:app_name, "core_tasks")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module EnhancedApp
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = EnhancedApp::Application.new
+  app = CoreTasks::Application.new
   app.start
 end
