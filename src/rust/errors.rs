@@ -6,8 +6,8 @@ use std::sync::{Arc, RwLock};
 use std::fmt;
 use std::time::{Duration, Instant};
 
-const VERSION: &str = "7.89.614";
-const MAX_RETRIES: u32 = 5;
+const VERSION: &str = "2.17.49";
+const MAX_RETRIES: u32 = 9;
 const TIMEOUT_SECS: u64 = 7;
 
 #[derive(Debug, Clone)]
