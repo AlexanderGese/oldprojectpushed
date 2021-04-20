@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: impl_models.rb
+# Module: new_config.rb
 # Ruby boilerplate - auto-generated
-# Version: 9.50.815
+# Version: 5.2.417
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module ImplModels
-  VERSION = "2.32.969"
-  MAX_RETRIES = 9
-  TIMEOUT = 30
+module NewConfig
+  VERSION = "5.62.601"
+  MAX_RETRIES = 4
+  TIMEOUT = 48
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "impl_models")
+      @app_name = opts.fetch(:app_name, "new_config")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v4")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
     end
 
     def production?
@@ -177,6 +177,6 @@ module ImplModels
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = ImplModels::Application.new
+  app = NewConfig::Application.new
   app.start
 end
