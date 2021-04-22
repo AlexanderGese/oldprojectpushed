@@ -1,13 +1,13 @@
-defmodule Base_Schema do
+defmodule Impl_Router do
   @moduledoc """
-  Module: base_schema.ex
+  Module: impl_router.ex
   Elixir boilerplate - auto-generated
-  Version: 6.2.958
+  Version: 6.58.788
   """
 
-  @version "4.50.623"
+  @version "3.30.982"
   @max_retries 9
-  @timeout 11905
+  @timeout 7015
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Base_Schema do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "base_schema"),
+      app_name: Keyword.get(opts, :app_name, "impl_router"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Base_Schema do
   end
 end
 
-defmodule Base_SchemaStore do
+defmodule Impl_RouterStore do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule Base_SchemaStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule Base_SchemaEventBus do
+defmodule Impl_RouterEventBus do
   use GenServer
 
   def start_link(opts \\ []) do
