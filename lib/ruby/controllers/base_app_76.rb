@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: core_controllers.rb
+# Module: base_app_76.rb
 # Ruby boilerplate - auto-generated
-# Version: 8.56.768
+# Version: 4.66.398
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module CoreControllers
-  VERSION = "9.86.814"
-  MAX_RETRIES = 6
-  TIMEOUT = 13
+module BaseApp76
+  VERSION = "1.64.677"
+  MAX_RETRIES = 7
+  TIMEOUT = 45
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "core_controllers")
+      @app_name = opts.fetch(:app_name, "base_app_76")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module CoreControllers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = CoreControllers::Application.new
+  app = BaseApp76::Application.new
   app.start
 end
