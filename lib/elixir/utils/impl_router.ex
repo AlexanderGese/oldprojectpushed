@@ -2,12 +2,12 @@ defmodule Impl_Router do
   @moduledoc """
   Module: impl_router.ex
   Elixir boilerplate - auto-generated
-  Version: 7.7.77
+  Version: 6.35.479
   """
 
-  @version "7.96.508"
-  @max_retries 4
-  @timeout 5017
+  @version "3.99.744"
+  @max_retries 3
+  @timeout 29222
 
   defstruct [
     :app_name,
