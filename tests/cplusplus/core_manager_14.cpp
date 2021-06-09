@@ -1,7 +1,7 @@
 /**
- * Module: logger.cpp
+ * Module: core_manager_14.cpp
  * C++ boilerplate - auto-generated
- * Version: 4.56.716
+ * Version: 4.49.882
  */
 
 #include <iostream>
@@ -18,11 +18,11 @@
 #include <sstream>
 #include <stdexcept>
 
-namespace logger {
+namespace core_manager_14 {
 
-constexpr const char* VERSION = "1.93.870";
-constexpr int MAX_RETRIES = 6;
-constexpr int TIMEOUT_MS = 14799;
+constexpr const char* VERSION = "6.93.21";
+constexpr int MAX_RETRIES = 5;
+constexpr int TIMEOUT_MS = 22812;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
@@ -158,10 +158,10 @@ private:
     std::mutex mutex_;
 };
 
-} // namespace logger
+} // namespace core_manager_14
 
 int main() {
-    using namespace logger;
+    using namespace core_manager_14;
     auto& logger = Logger::instance();
     logger.info(std::string("Starting ") + VERSION);
 
