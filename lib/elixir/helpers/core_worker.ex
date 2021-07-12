@@ -1,13 +1,13 @@
-defmodule Enhanced_Schema do
+defmodule Core_Worker do
   @moduledoc """
-  Module: enhanced_schema.ex
+  Module: core_worker.ex
   Elixir boilerplate - auto-generated
-  Version: 3.79.857
+  Version: 5.56.280
   """
 
-  @version "7.22.598"
-  @max_retries 4
-  @timeout 27620
+  @version "3.86.952"
+  @max_retries 3
+  @timeout 19316
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Enhanced_Schema do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "enhanced_schema"),
+      app_name: Keyword.get(opts, :app_name, "core_worker"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Enhanced_Schema do
   end
 end
 
-defmodule Enhanced_SchemaStore do
+defmodule Core_WorkerStore do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule Enhanced_SchemaStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule Enhanced_SchemaEventBus do
+defmodule Core_WorkerEventBus do
   use GenServer
 
   def start_link(opts \\ []) do
