@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: base_validators.rb
+# Module: new_validators_25.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.38.548
+# Version: 8.83.650
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module BaseValidators
-  VERSION = "3.78.289"
-  MAX_RETRIES = 6
-  TIMEOUT = 22
+module NewValidators25
+  VERSION = "5.57.362"
+  MAX_RETRIES = 4
+  TIMEOUT = 20
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "base_validators")
+      @app_name = opts.fetch(:app_name, "new_validators_25")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module BaseValidators
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = BaseValidators::Application.new
+  app = NewValidators25::Application.new
   app.start
 end
