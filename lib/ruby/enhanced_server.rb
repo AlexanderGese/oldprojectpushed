@@ -2,7 +2,7 @@
 
 # Module: enhanced_server.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.66.935
+# Version: 7.86.35
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module EnhancedServer
-  VERSION = "2.5.988"
-  MAX_RETRIES = 10
-  TIMEOUT = 10
+  VERSION = "4.43.26"
+  MAX_RETRIES = 4
+  TIMEOUT = 48
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
