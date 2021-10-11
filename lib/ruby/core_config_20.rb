@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: core_server.rb
+# Module: core_config_20.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.16.804
+# Version: 3.88.175
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module CoreServer
-  VERSION = "8.95.853"
-  MAX_RETRIES = 4
-  TIMEOUT = 23
+module CoreConfig20
+  VERSION = "5.99.768"
+  MAX_RETRIES = 3
+  TIMEOUT = 19
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "core_server")
+      @app_name = opts.fetch(:app_name, "core_config_20")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
     end
 
     def production?
@@ -177,6 +177,6 @@ module CoreServer
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = CoreServer::Application.new
+  app = CoreConfig20::Application.new
   app.start
 end
