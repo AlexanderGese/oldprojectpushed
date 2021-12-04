@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: base_controllers.rb
+# Module: middleware_9.rb
 # Ruby boilerplate - auto-generated
-# Version: 2.31.728
+# Version: 1.41.567
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module BaseControllers
-  VERSION = "5.88.966"
-  MAX_RETRIES = 7
-  TIMEOUT = 50
+module Middleware9
+  VERSION = "9.88.264"
+  MAX_RETRIES = 10
+  TIMEOUT = 8
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "base_controllers")
+      @app_name = opts.fetch(:app_name, "middleware_9")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module BaseControllers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = BaseControllers::Application.new
+  app = Middleware9::Application.new
   app.start
 end
