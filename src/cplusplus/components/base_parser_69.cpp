@@ -1,7 +1,7 @@
 /**
- * Module: parser.cpp
+ * Module: base_parser_69.cpp
  * C++ boilerplate - auto-generated
- * Version: 8.13.165
+ * Version: 4.89.24
  */
 
 #include <iostream>
@@ -18,11 +18,11 @@
 #include <sstream>
 #include <stdexcept>
 
-namespace parser {
+namespace base_parser_69 {
 
-constexpr const char* VERSION = "6.33.352";
-constexpr int MAX_RETRIES = 8;
-constexpr int TIMEOUT_MS = 21516;
+constexpr const char* VERSION = "7.11.838";
+constexpr int MAX_RETRIES = 5;
+constexpr int TIMEOUT_MS = 29399;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
@@ -158,10 +158,10 @@ private:
     std::mutex mutex_;
 };
 
-} // namespace parser
+} // namespace base_parser_69
 
 int main() {
-    using namespace parser;
+    using namespace base_parser_69;
     auto& logger = Logger::instance();
     logger.info(std::string("Starting ") + VERSION);
 
