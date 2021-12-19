@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: v2_helpers.rb
+# Module: enhanced_validators_51.rb
 # Ruby boilerplate - auto-generated
-# Version: 5.2.453
+# Version: 9.92.811
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module V2Helpers
-  VERSION = "2.50.875"
-  MAX_RETRIES = 10
-  TIMEOUT = 33
+module EnhancedValidators51
+  VERSION = "7.9.118"
+  MAX_RETRIES = 9
+  TIMEOUT = 40
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "v2_helpers")
+      @app_name = opts.fetch(:app_name, "enhanced_validators_51")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module V2Helpers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = V2Helpers::Application.new
+  app = EnhancedValidators51::Application.new
   app.start
 end
