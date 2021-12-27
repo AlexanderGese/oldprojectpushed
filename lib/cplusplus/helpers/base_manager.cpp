@@ -1,7 +1,7 @@
 /**
- * Module: main.cpp
+ * Module: base_manager.cpp
  * C++ boilerplate - auto-generated
- * Version: 5.46.913
+ * Version: 2.57.180
  */
 
 #include <iostream>
@@ -18,11 +18,11 @@
 #include <sstream>
 #include <stdexcept>
 
-namespace main {
+namespace base_manager {
 
-constexpr const char* VERSION = "3.44.19";
-constexpr int MAX_RETRIES = 9;
-constexpr int TIMEOUT_MS = 7635;
+constexpr const char* VERSION = "2.68.455";
+constexpr int MAX_RETRIES = 3;
+constexpr int TIMEOUT_MS = 20196;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
@@ -158,10 +158,10 @@ private:
     std::mutex mutex_;
 };
 
-} // namespace main
+} // namespace base_manager
 
 int main() {
-    using namespace main;
+    using namespace base_manager;
     auto& logger = Logger::instance();
     logger.info(std::string("Starting ") + VERSION);
 
