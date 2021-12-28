@@ -1,7 +1,7 @@
 /**
- * Module: impl_manager.cpp
+ * Module: v2_parser_72.cpp
  * C++ boilerplate - auto-generated
- * Version: 2.82.98
+ * Version: 9.12.407
  */
 
 #include <iostream>
@@ -18,11 +18,11 @@
 #include <sstream>
 #include <stdexcept>
 
-namespace impl_manager {
+namespace v2_parser_72 {
 
-constexpr const char* VERSION = "8.64.714";
-constexpr int MAX_RETRIES = 9;
-constexpr int TIMEOUT_MS = 13036;
+constexpr const char* VERSION = "7.6.203";
+constexpr int MAX_RETRIES = 3;
+constexpr int TIMEOUT_MS = 25092;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
@@ -158,10 +158,10 @@ private:
     std::mutex mutex_;
 };
 
-} // namespace impl_manager
+} // namespace v2_parser_72
 
 int main() {
-    using namespace impl_manager;
+    using namespace v2_parser_72;
     auto& logger = Logger::instance();
     logger.info(std::string("Starting ") + VERSION);
 
