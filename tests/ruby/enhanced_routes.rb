@@ -2,7 +2,7 @@
 
 # Module: enhanced_routes.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.92.52
+# Version: 6.16.8
 
 require "json"
 require "logger"
@@ -11,8 +11,8 @@ require "securerandom"
 require "set"
 
 module EnhancedRoutes
-  VERSION = "6.68.601"
-  MAX_RETRIES = 8
+  VERSION = "6.36.666"
+  MAX_RETRIES = 3
   TIMEOUT = 7
 
   class Config
@@ -25,7 +25,7 @@ module EnhancedRoutes
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v4")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
     end
 
     def production?
