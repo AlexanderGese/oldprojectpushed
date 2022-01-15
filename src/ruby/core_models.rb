@@ -2,7 +2,7 @@
 
 # Module: core_models.rb
 # Ruby boilerplate - auto-generated
-# Version: 3.76.933
+# Version: 3.85.181
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module CoreModels
-  VERSION = "6.46.473"
-  MAX_RETRIES = 4
-  TIMEOUT = 50
+  VERSION = "9.53.775"
+  MAX_RETRIES = 10
+  TIMEOUT = 49
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
@@ -25,7 +25,7 @@ module CoreModels
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
     end
 
     def production?
