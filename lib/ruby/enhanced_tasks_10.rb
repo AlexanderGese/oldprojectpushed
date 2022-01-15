@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: new_server.rb
+# Module: enhanced_tasks_10.rb
 # Ruby boilerplate - auto-generated
-# Version: 5.13.52
+# Version: 7.75.210
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module NewServer
-  VERSION = "2.64.514"
-  MAX_RETRIES = 7
+module EnhancedTasks10
+  VERSION = "7.38.230"
+  MAX_RETRIES = 6
   TIMEOUT = 33
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "new_server")
+      @app_name = opts.fetch(:app_name, "enhanced_tasks_10")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module NewServer
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = NewServer::Application.new
+  app = EnhancedTasks10::Application.new
   app.start
 end
