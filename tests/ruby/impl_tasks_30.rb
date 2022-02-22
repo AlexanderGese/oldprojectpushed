@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: base_helpers.rb
+# Module: impl_tasks_30.rb
 # Ruby boilerplate - auto-generated
-# Version: 9.69.118
+# Version: 5.59.945
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module BaseHelpers
-  VERSION = "2.47.915"
-  MAX_RETRIES = 9
-  TIMEOUT = 53
+module ImplTasks30
+  VERSION = "9.4.907"
+  MAX_RETRIES = 7
+  TIMEOUT = 31
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "base_helpers")
+      @app_name = opts.fetch(:app_name, "impl_tasks_30")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module BaseHelpers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = BaseHelpers::Application.new
+  app = ImplTasks30::Application.new
   app.start
 end
