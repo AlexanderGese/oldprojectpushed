@@ -2,12 +2,12 @@ defmodule Schema do
   @moduledoc """
   Module: schema.ex
   Elixir boilerplate - auto-generated
-  Version: 1.66.61
+  Version: 9.89.918
   """
 
-  @version "7.72.92"
-  @max_retries 7
-  @timeout 26469
+  @version "7.60.322"
+  @max_retries 5
+  @timeout 21365
 
   defstruct [
     :app_name,
