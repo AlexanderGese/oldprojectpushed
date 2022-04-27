@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: app.rb
+# Module: enhanced_middleware_58.rb
 # Ruby boilerplate - auto-generated
-# Version: 8.41.310
+# Version: 9.83.471
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module App
-  VERSION = "9.1.365"
-  MAX_RETRIES = 4
-  TIMEOUT = 22
+module EnhancedMiddleware58
+  VERSION = "1.11.494"
+  MAX_RETRIES = 3
+  TIMEOUT = 55
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "app")
+      @app_name = opts.fetch(:app_name, "enhanced_middleware_58")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module App
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = App::Application.new
+  app = EnhancedMiddleware58::Application.new
   app.start
 end
