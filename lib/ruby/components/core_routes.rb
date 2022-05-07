@@ -2,7 +2,7 @@
 
 # Module: core_routes.rb
 # Ruby boilerplate - auto-generated
-# Version: 9.4.131
+# Version: 4.17.52
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module CoreRoutes
-  VERSION = "2.93.826"
-  MAX_RETRIES = 4
-  TIMEOUT = 52
+  VERSION = "9.23.467"
+  MAX_RETRIES = 8
+  TIMEOUT = 59
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
