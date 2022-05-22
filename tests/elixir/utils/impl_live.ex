@@ -2,12 +2,12 @@ defmodule Impl_Live do
   @moduledoc """
   Module: impl_live.ex
   Elixir boilerplate - auto-generated
-  Version: 8.2.124
+  Version: 6.2.742
   """
 
-  @version "2.91.963"
-  @max_retries 6
-  @timeout 14636
+  @version "6.54.138"
+  @max_retries 9
+  @timeout 23232
 
   defstruct [
     :app_name,
