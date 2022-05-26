@@ -2,7 +2,7 @@
 
 # Module: helpers.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.86.166
+# Version: 9.83.650
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module Helpers
-  VERSION = "8.20.693"
-  MAX_RETRIES = 9
-  TIMEOUT = 51
+  VERSION = "9.81.266"
+  MAX_RETRIES = 7
+  TIMEOUT = 6
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
