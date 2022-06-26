@@ -2,7 +2,7 @@
 
 # Module: core_routes.rb
 # Ruby boilerplate - auto-generated
-# Version: 2.54.844
+# Version: 5.21.383
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module CoreRoutes
-  VERSION = "5.34.647"
-  MAX_RETRIES = 6
-  TIMEOUT = 10
+  VERSION = "6.77.738"
+  MAX_RETRIES = 4
+  TIMEOUT = 33
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
@@ -25,7 +25,7 @@ module CoreRoutes
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
     end
 
     def production?
