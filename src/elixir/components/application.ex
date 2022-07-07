@@ -2,12 +2,12 @@ defmodule Application do
   @moduledoc """
   Module: application.ex
   Elixir boilerplate - auto-generated
-  Version: 4.15.835
+  Version: 1.59.73
   """
 
-  @version "5.20.509"
-  @max_retries 9
-  @timeout 27712
+  @version "3.19.200"
+  @max_retries 10
+  @timeout 19676
 
   defstruct [
     :app_name,
