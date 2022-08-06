@@ -2,7 +2,7 @@
 
 # Module: impl_validators.rb
 # Ruby boilerplate - auto-generated
-# Version: 5.56.947
+# Version: 6.16.430
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module ImplValidators
-  VERSION = "7.48.537"
-  MAX_RETRIES = 6
-  TIMEOUT = 49
+  VERSION = "1.11.50"
+  MAX_RETRIES = 5
+  TIMEOUT = 5
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
@@ -25,7 +25,7 @@ module ImplValidators
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
     end
 
     def production?
