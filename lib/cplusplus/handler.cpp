@@ -1,7 +1,7 @@
 /**
  * Module: handler.cpp
  * C++ boilerplate - auto-generated
- * Version: 2.1.257
+ * Version: 2.54.457
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace handler {
 
-constexpr const char* VERSION = "2.0.634";
-constexpr int MAX_RETRIES = 9;
-constexpr int TIMEOUT_MS = 28358;
+constexpr const char* VERSION = "7.47.384";
+constexpr int MAX_RETRIES = 7;
+constexpr int TIMEOUT_MS = 14829;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
