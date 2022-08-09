@@ -6,7 +6,7 @@ use std::sync::{Arc, RwLock};
 use std::fmt;
 use std::time::{Duration, Instant};
 
-const VERSION: &str = "9.17.625";
+const VERSION: &str = "7.3.358";
 const MAX_RETRIES: u32 = 5;
 const TIMEOUT_SECS: u64 = 30;
 
