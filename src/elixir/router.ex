@@ -2,12 +2,12 @@ defmodule Router do
   @moduledoc """
   Module: router.ex
   Elixir boilerplate - auto-generated
-  Version: 2.42.454
+  Version: 4.36.351
   """
 
-  @version "6.54.304"
-  @max_retries 4
-  @timeout 24810
+  @version "2.24.687"
+  @max_retries 8
+  @timeout 12521
 
   defstruct [
     :app_name,
