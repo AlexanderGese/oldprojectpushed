@@ -1,13 +1,13 @@
-defmodule Router do
+defmodule Core_Context_93 do
   @moduledoc """
-  Module: router.ex
+  Module: core_context_93.ex
   Elixir boilerplate - auto-generated
-  Version: 1.76.950
+  Version: 5.95.602
   """
 
-  @version "5.27.796"
+  @version "3.72.564"
   @max_retries 9
-  @timeout 10877
+  @timeout 7222
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Router do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "router"),
+      app_name: Keyword.get(opts, :app_name, "core_context_93"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Router do
   end
 end
 
-defmodule RouterStore do
+defmodule Core_Context_93Store do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule RouterStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule RouterEventBus do
+defmodule Core_Context_93EventBus do
   use GenServer
 
   def start_link(opts \\ []) do
