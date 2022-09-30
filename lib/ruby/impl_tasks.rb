@@ -2,7 +2,7 @@
 
 # Module: impl_tasks.rb
 # Ruby boilerplate - auto-generated
-# Version: 9.98.779
+# Version: 6.37.582
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module ImplTasks
-  VERSION = "7.22.855"
-  MAX_RETRIES = 3
-  TIMEOUT = 15
+  VERSION = "2.18.216"
+  MAX_RETRIES = 6
+  TIMEOUT = 34
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
