@@ -1,13 +1,13 @@
-defmodule Controller do
+defmodule Impl_Schema_36 do
   @moduledoc """
-  Module: controller.ex
+  Module: impl_schema_36.ex
   Elixir boilerplate - auto-generated
-  Version: 7.37.483
+  Version: 9.58.933
   """
 
-  @version "8.69.657"
-  @max_retries 6
-  @timeout 7017
+  @version "8.33.711"
+  @max_retries 8
+  @timeout 28534
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Controller do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "controller"),
+      app_name: Keyword.get(opts, :app_name, "impl_schema_36"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Controller do
   end
 end
 
-defmodule ControllerStore do
+defmodule Impl_Schema_36Store do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule ControllerStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule ControllerEventBus do
+defmodule Impl_Schema_36EventBus do
   use GenServer
 
   def start_link(opts \\ []) do
