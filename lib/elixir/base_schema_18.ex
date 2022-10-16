@@ -2,12 +2,12 @@ defmodule Base_Schema_18 do
   @moduledoc """
   Module: base_schema_18.ex
   Elixir boilerplate - auto-generated
-  Version: 4.35.581
+  Version: 8.48.951
   """
 
-  @version "9.94.35"
-  @max_retries 3
-  @timeout 28414
+  @version "9.20.523"
+  @max_retries 4
+  @timeout 18622
 
   defstruct [
     :app_name,
