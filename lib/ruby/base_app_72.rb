@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: v2_models.rb
+# Module: base_app_72.rb
 # Ruby boilerplate - auto-generated
-# Version: 6.26.199
+# Version: 2.14.772
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module V2Models
-  VERSION = "8.66.405"
-  MAX_RETRIES = 10
-  TIMEOUT = 16
+module BaseApp72
+  VERSION = "2.28.427"
+  MAX_RETRIES = 8
+  TIMEOUT = 36
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "v2_models")
+      @app_name = opts.fetch(:app_name, "base_app_72")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module V2Models
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = V2Models::Application.new
+  app = BaseApp72::Application.new
   app.start
 end
