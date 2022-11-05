@@ -2,12 +2,12 @@ defmodule Impl_Server do
   @moduledoc """
   Module: impl_server.ex
   Elixir boilerplate - auto-generated
-  Version: 9.83.34
+  Version: 7.58.740
   """
 
-  @version "7.29.726"
-  @max_retries 9
-  @timeout 20917
+  @version "4.3.843"
+  @max_retries 7
+  @timeout 14104
 
   defstruct [
     :app_name,
