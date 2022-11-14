@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: v2_routes.rb
+# Module: v2_validators_37.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.39.650
+# Version: 9.50.211
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module V2Routes
-  VERSION = "8.48.181"
-  MAX_RETRIES = 7
-  TIMEOUT = 6
+module V2Validators37
+  VERSION = "4.46.497"
+  MAX_RETRIES = 9
+  TIMEOUT = 32
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "v2_routes")
+      @app_name = opts.fetch(:app_name, "v2_validators_37")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v4")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
     end
 
     def production?
@@ -177,6 +177,6 @@ module V2Routes
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = V2Routes::Application.new
+  app = V2Validators37::Application.new
   app.start
 end
