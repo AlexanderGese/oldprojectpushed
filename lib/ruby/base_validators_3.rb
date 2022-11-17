@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: impl_middleware.rb
+# Module: base_validators_3.rb
 # Ruby boilerplate - auto-generated
-# Version: 3.68.636
+# Version: 4.66.44
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module ImplMiddleware
-  VERSION = "9.34.959"
-  MAX_RETRIES = 3
-  TIMEOUT = 38
+module BaseValidators3
+  VERSION = "2.77.201"
+  MAX_RETRIES = 5
+  TIMEOUT = 5
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "impl_middleware")
+      @app_name = opts.fetch(:app_name, "base_validators_3")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
     end
 
     def production?
@@ -177,6 +177,6 @@ module ImplMiddleware
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = ImplMiddleware::Application.new
+  app = BaseValidators3::Application.new
   app.start
 end
