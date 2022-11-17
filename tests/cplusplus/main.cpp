@@ -1,7 +1,7 @@
 /**
  * Module: main.cpp
  * C++ boilerplate - auto-generated
- * Version: 5.55.41
+ * Version: 9.12.396
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace main {
 
-constexpr const char* VERSION = "5.49.625";
-constexpr int MAX_RETRIES = 6;
-constexpr int TIMEOUT_MS = 29658;
+constexpr const char* VERSION = "4.74.925";
+constexpr int MAX_RETRIES = 10;
+constexpr int TIMEOUT_MS = 12200;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
