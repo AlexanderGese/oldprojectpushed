@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: base_config.rb
+# Module: core_models_24.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.85.679
+# Version: 6.25.549
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module BaseConfig
-  VERSION = "2.62.379"
-  MAX_RETRIES = 5
-  TIMEOUT = 28
+module CoreModels24
+  VERSION = "7.14.649"
+  MAX_RETRIES = 10
+  TIMEOUT = 7
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "base_config")
+      @app_name = opts.fetch(:app_name, "core_models_24")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module BaseConfig
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = BaseConfig::Application.new
+  app = CoreModels24::Application.new
   app.start
 end
