@@ -2,7 +2,7 @@
 
 # Module: v2_config.rb
 # Ruby boilerplate - auto-generated
-# Version: 3.8.170
+# Version: 3.97.805
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module V2Config
-  VERSION = "4.21.238"
-  MAX_RETRIES = 10
-  TIMEOUT = 32
+  VERSION = "2.14.529"
+  MAX_RETRIES = 4
+  TIMEOUT = 55
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
@@ -25,7 +25,7 @@ module V2Config
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
     end
 
     def production?
