@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: middleware.rb
+# Module: core_models_47.rb
 # Ruby boilerplate - auto-generated
-# Version: 8.17.699
+# Version: 7.28.898
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module Middleware
-  VERSION = "1.65.925"
+module CoreModels47
+  VERSION = "5.58.982"
   MAX_RETRIES = 8
-  TIMEOUT = 16
+  TIMEOUT = 32
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "middleware")
+      @app_name = opts.fetch(:app_name, "core_models_47")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module Middleware
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Middleware::Application.new
+  app = CoreModels47::Application.new
   app.start
 end
