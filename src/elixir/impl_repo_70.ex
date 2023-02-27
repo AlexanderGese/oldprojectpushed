@@ -1,13 +1,13 @@
-defmodule Base_Repo do
+defmodule Impl_Repo_70 do
   @moduledoc """
-  Module: base_repo.ex
+  Module: impl_repo_70.ex
   Elixir boilerplate - auto-generated
-  Version: 2.54.65
+  Version: 2.16.264
   """
 
-  @version "9.74.464"
+  @version "5.6.418"
   @max_retries 3
-  @timeout 18427
+  @timeout 20982
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Base_Repo do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "base_repo"),
+      app_name: Keyword.get(opts, :app_name, "impl_repo_70"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Base_Repo do
   end
 end
 
-defmodule Base_RepoStore do
+defmodule Impl_Repo_70Store do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule Base_RepoStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule Base_RepoEventBus do
+defmodule Impl_Repo_70EventBus do
   use GenServer
 
   def start_link(opts \\ []) do
