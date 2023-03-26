@@ -1,7 +1,7 @@
 /**
  * Module: enhanced_handler.cpp
  * C++ boilerplate - auto-generated
- * Version: 9.3.576
+ * Version: 8.41.277
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace enhanced_handler {
 
-constexpr const char* VERSION = "4.46.281";
-constexpr int MAX_RETRIES = 7;
-constexpr int TIMEOUT_MS = 24995;
+constexpr const char* VERSION = "6.86.607";
+constexpr int MAX_RETRIES = 6;
+constexpr int TIMEOUT_MS = 20975;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
