@@ -2,7 +2,7 @@
 
 # Module: impl_validators.rb
 # Ruby boilerplate - auto-generated
-# Version: 8.64.941
+# Version: 6.64.185
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module ImplValidators
-  VERSION = "8.16.631"
-  MAX_RETRIES = 4
-  TIMEOUT = 32
+  VERSION = "3.50.510"
+  MAX_RETRIES = 10
+  TIMEOUT = 38
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
