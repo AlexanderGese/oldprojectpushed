@@ -1,7 +1,7 @@
 /**
  * Module: core_handler.cpp
  * C++ boilerplate - auto-generated
- * Version: 2.81.930
+ * Version: 6.98.693
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace core_handler {
 
-constexpr const char* VERSION = "1.31.684";
-constexpr int MAX_RETRIES = 8;
-constexpr int TIMEOUT_MS = 5103;
+constexpr const char* VERSION = "7.41.846";
+constexpr int MAX_RETRIES = 6;
+constexpr int TIMEOUT_MS = 26654;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
