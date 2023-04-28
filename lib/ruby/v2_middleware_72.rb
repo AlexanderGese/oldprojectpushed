@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: helpers.rb
+# Module: v2_middleware_72.rb
 # Ruby boilerplate - auto-generated
-# Version: 8.14.533
+# Version: 1.43.405
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module Helpers
-  VERSION = "6.6.497"
-  MAX_RETRIES = 7
-  TIMEOUT = 48
+module V2Middleware72
+  VERSION = "3.19.690"
+  MAX_RETRIES = 4
+  TIMEOUT = 33
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "helpers")
+      @app_name = opts.fetch(:app_name, "v2_middleware_72")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module Helpers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Helpers::Application.new
+  app = V2Middleware72::Application.new
   app.start
 end
