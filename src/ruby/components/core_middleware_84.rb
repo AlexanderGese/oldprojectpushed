@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: controllers.rb
+# Module: core_middleware_84.rb
 # Ruby boilerplate - auto-generated
-# Version: 6.79.511
+# Version: 8.97.531
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module Controllers
-  VERSION = "8.24.513"
-  MAX_RETRIES = 3
-  TIMEOUT = 20
+module CoreMiddleware84
+  VERSION = "5.46.286"
+  MAX_RETRIES = 10
+  TIMEOUT = 15
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "controllers")
+      @app_name = opts.fetch(:app_name, "core_middleware_84")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module Controllers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Controllers::Application.new
+  app = CoreMiddleware84::Application.new
   app.start
 end
