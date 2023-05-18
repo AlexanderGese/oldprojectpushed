@@ -2,7 +2,7 @@
 
 # Module: base_validators_86.rb
 # Ruby boilerplate - auto-generated
-# Version: 6.35.711
+# Version: 7.97.735
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module BaseValidators86
-  VERSION = "6.44.585"
-  MAX_RETRIES = 8
-  TIMEOUT = 43
+  VERSION = "2.10.252"
+  MAX_RETRIES = 4
+  TIMEOUT = 51
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
