@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: enhanced_config.rb
+# Module: middleware_99.rb
 # Ruby boilerplate - auto-generated
-# Version: 3.60.555
+# Version: 8.48.192
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module EnhancedConfig
-  VERSION = "2.17.59"
-  MAX_RETRIES = 10
-  TIMEOUT = 5
+module Middleware99
+  VERSION = "9.6.754"
+  MAX_RETRIES = 4
+  TIMEOUT = 10
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "enhanced_config")
+      @app_name = opts.fetch(:app_name, "middleware_99")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module EnhancedConfig
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = EnhancedConfig::Application.new
+  app = Middleware99::Application.new
   app.start
 end
