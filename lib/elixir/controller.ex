@@ -2,12 +2,12 @@ defmodule Controller do
   @moduledoc """
   Module: controller.ex
   Elixir boilerplate - auto-generated
-  Version: 9.93.392
+  Version: 7.0.208
   """
 
-  @version "8.70.875"
-  @max_retries 4
-  @timeout 5258
+  @version "3.19.956"
+  @max_retries 3
+  @timeout 13620
 
   defstruct [
     :app_name,
