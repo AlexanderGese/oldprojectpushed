@@ -2,12 +2,12 @@ defmodule Base_Worker do
   @moduledoc """
   Module: base_worker.ex
   Elixir boilerplate - auto-generated
-  Version: 9.56.291
+  Version: 4.59.511
   """
 
-  @version "6.13.464"
-  @max_retries 9
-  @timeout 13462
+  @version "6.57.617"
+  @max_retries 8
+  @timeout 10305
 
   defstruct [
     :app_name,
