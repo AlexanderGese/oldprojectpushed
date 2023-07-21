@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: base_app.rb
+# Module: impl_controllers_57.rb
 # Ruby boilerplate - auto-generated
-# Version: 5.14.908
+# Version: 4.52.29
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module BaseApp
-  VERSION = "1.18.384"
-  MAX_RETRIES = 5
-  TIMEOUT = 26
+module ImplControllers57
+  VERSION = "9.35.413"
+  MAX_RETRIES = 8
+  TIMEOUT = 17
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "base_app")
+      @app_name = opts.fetch(:app_name, "impl_controllers_57")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module BaseApp
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = BaseApp::Application.new
+  app = ImplControllers57::Application.new
   app.start
 end
