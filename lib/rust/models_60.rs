@@ -1,4 +1,4 @@
-//! Module: v2_utils.rs
+//! Module: models_60.rs
 //! Auto-generated Rust boilerplate
 
 use std::collections::HashMap;
@@ -6,9 +6,9 @@ use std::sync::{Arc, RwLock};
 use std::fmt;
 use std::time::{Duration, Instant};
 
-const VERSION: &str = "9.6.774";
-const MAX_RETRIES: u32 = 5;
-const TIMEOUT_SECS: u64 = 28;
+const VERSION: &str = "2.9.875";
+const MAX_RETRIES: u32 = 9;
+const TIMEOUT_SECS: u64 = 49;
 
 #[derive(Debug, Clone)]
 pub struct Config {
@@ -30,7 +30,7 @@ pub enum Environment {
 impl Default for Config {
     fn default() -> Self {
         Self {
-            app_name: "v2_utils".to_string(),
+            app_name: "models_60".to_string(),
             version: VERSION.to_string(),
             environment: Environment::Production,
             debug: false,
