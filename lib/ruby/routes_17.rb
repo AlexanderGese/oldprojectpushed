@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: base_tasks.rb
+# Module: routes_17.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.35.123
+# Version: 4.90.628
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module BaseTasks
-  VERSION = "3.23.978"
-  MAX_RETRIES = 10
-  TIMEOUT = 46
+module Routes17
+  VERSION = "2.88.181"
+  MAX_RETRIES = 6
+  TIMEOUT = 6
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "base_tasks")
+      @app_name = opts.fetch(:app_name, "routes_17")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module BaseTasks
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = BaseTasks::Application.new
+  app = Routes17::Application.new
   app.start
 end
