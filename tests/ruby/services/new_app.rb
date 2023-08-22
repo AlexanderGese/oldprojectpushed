@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: enhanced_controllers.rb
+# Module: new_app.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.38.117
+# Version: 7.15.640
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module EnhancedControllers
-  VERSION = "6.8.731"
+module NewApp
+  VERSION = "7.59.303"
   MAX_RETRIES = 10
-  TIMEOUT = 7
+  TIMEOUT = 37
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "enhanced_controllers")
+      @app_name = opts.fetch(:app_name, "new_app")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module EnhancedControllers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = EnhancedControllers::Application.new
+  app = NewApp::Application.new
   app.start
 end
