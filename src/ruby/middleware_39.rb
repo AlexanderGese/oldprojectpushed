@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: new_controllers.rb
+# Module: middleware_39.rb
 # Ruby boilerplate - auto-generated
-# Version: 5.76.951
+# Version: 5.71.927
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module NewControllers
-  VERSION = "1.10.340"
-  MAX_RETRIES = 3
-  TIMEOUT = 17
+module Middleware39
+  VERSION = "5.73.972"
+  MAX_RETRIES = 7
+  TIMEOUT = 24
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "new_controllers")
+      @app_name = opts.fetch(:app_name, "middleware_39")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
     end
 
     def production?
@@ -177,6 +177,6 @@ module NewControllers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = NewControllers::Application.new
+  app = Middleware39::Application.new
   app.start
 end
