@@ -1,13 +1,13 @@
-defmodule Schema do
+defmodule Core_Live do
   @moduledoc """
-  Module: schema.ex
+  Module: core_live.ex
   Elixir boilerplate - auto-generated
-  Version: 7.53.681
+  Version: 2.43.562
   """
 
-  @version "4.71.143"
-  @max_retries 8
-  @timeout 7225
+  @version "7.86.888"
+  @max_retries 7
+  @timeout 17213
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Schema do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "schema"),
+      app_name: Keyword.get(opts, :app_name, "core_live"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Schema do
   end
 end
 
-defmodule SchemaStore do
+defmodule Core_LiveStore do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule SchemaStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule SchemaEventBus do
+defmodule Core_LiveEventBus do
   use GenServer
 
   def start_link(opts \\ []) do
