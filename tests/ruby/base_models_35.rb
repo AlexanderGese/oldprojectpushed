@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: v2_tasks.rb
+# Module: base_models_35.rb
 # Ruby boilerplate - auto-generated
-# Version: 5.35.744
+# Version: 2.96.756
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module V2Tasks
-  VERSION = "4.17.224"
-  MAX_RETRIES = 5
+module BaseModels35
+  VERSION = "1.30.118"
+  MAX_RETRIES = 7
   TIMEOUT = 39
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "v2_tasks")
+      @app_name = opts.fetch(:app_name, "base_models_35")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module V2Tasks
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = V2Tasks::Application.new
+  app = BaseModels35::Application.new
   app.start
 end
