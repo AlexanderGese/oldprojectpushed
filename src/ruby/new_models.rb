@@ -2,7 +2,7 @@
 
 # Module: new_models.rb
 # Ruby boilerplate - auto-generated
-# Version: 2.18.539
+# Version: 9.32.595
 
 require "json"
 require "logger"
@@ -11,8 +11,8 @@ require "securerandom"
 require "set"
 
 module NewModels
-  VERSION = "1.56.398"
-  MAX_RETRIES = 4
+  VERSION = "2.77.748"
+  MAX_RETRIES = 3
   TIMEOUT = 59
 
   class Config
@@ -25,7 +25,7 @@ module NewModels
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
     end
 
     def production?
