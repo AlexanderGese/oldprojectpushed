@@ -2,7 +2,7 @@
 
 # Module: base_validators.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.26.929
+# Version: 7.15.836
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module BaseValidators
-  VERSION = "6.40.779"
-  MAX_RETRIES = 7
-  TIMEOUT = 32
+  VERSION = "4.33.103"
+  MAX_RETRIES = 4
+  TIMEOUT = 27
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
@@ -25,7 +25,7 @@ module BaseValidators
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v4")
     end
 
     def production?
