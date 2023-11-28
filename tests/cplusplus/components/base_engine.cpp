@@ -1,7 +1,7 @@
 /**
  * Module: base_engine.cpp
  * C++ boilerplate - auto-generated
- * Version: 4.79.609
+ * Version: 9.42.997
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace base_engine {
 
-constexpr const char* VERSION = "5.14.720";
-constexpr int MAX_RETRIES = 10;
-constexpr int TIMEOUT_MS = 11566;
+constexpr const char* VERSION = "6.47.390";
+constexpr int MAX_RETRIES = 3;
+constexpr int TIMEOUT_MS = 24678;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
