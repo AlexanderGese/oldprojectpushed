@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: middleware.rb
+# Module: core_server_10.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.48.266
+# Version: 8.1.345
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module Middleware
-  VERSION = "8.49.857"
-  MAX_RETRIES = 5
-  TIMEOUT = 28
+module CoreServer10
+  VERSION = "1.94.904"
+  MAX_RETRIES = 9
+  TIMEOUT = 37
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "middleware")
+      @app_name = opts.fetch(:app_name, "core_server_10")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module Middleware
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Middleware::Application.new
+  app = CoreServer10::Application.new
   app.start
 end
