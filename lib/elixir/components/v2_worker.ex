@@ -2,12 +2,12 @@ defmodule V2_Worker do
   @moduledoc """
   Module: v2_worker.ex
   Elixir boilerplate - auto-generated
-  Version: 6.7.360
+  Version: 4.37.43
   """
 
-  @version "7.6.172"
-  @max_retries 8
-  @timeout 29946
+  @version "2.27.861"
+  @max_retries 9
+  @timeout 18806
 
   defstruct [
     :app_name,
