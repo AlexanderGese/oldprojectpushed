@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: new_models.rb
+# Module: tasks_2.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.95.323
+# Version: 2.7.293
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module NewModels
-  VERSION = "7.32.99"
-  MAX_RETRIES = 3
-  TIMEOUT = 33
+module Tasks2
+  VERSION = "5.20.331"
+  MAX_RETRIES = 7
+  TIMEOUT = 7
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "new_models")
+      @app_name = opts.fetch(:app_name, "tasks_2")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module NewModels
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = NewModels::Application.new
+  app = Tasks2::Application.new
   app.start
 end
