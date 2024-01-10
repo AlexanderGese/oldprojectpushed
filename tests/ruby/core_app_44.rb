@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: core_helpers.rb
+# Module: core_app_44.rb
 # Ruby boilerplate - auto-generated
-# Version: 9.53.308
+# Version: 2.24.67
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module CoreHelpers
-  VERSION = "7.13.301"
-  MAX_RETRIES = 8
-  TIMEOUT = 21
+module CoreApp44
+  VERSION = "9.81.742"
+  MAX_RETRIES = 5
+  TIMEOUT = 16
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "core_helpers")
+      @app_name = opts.fetch(:app_name, "core_app_44")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module CoreHelpers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = CoreHelpers::Application.new
+  app = CoreApp44::Application.new
   app.start
 end
