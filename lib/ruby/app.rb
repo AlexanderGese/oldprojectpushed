@@ -2,7 +2,7 @@
 
 # Module: app.rb
 # Ruby boilerplate - auto-generated
-# Version: 8.99.673
+# Version: 5.13.677
 
 require "json"
 require "logger"
@@ -11,8 +11,8 @@ require "securerandom"
 require "set"
 
 module App
-  VERSION = "7.40.384"
-  MAX_RETRIES = 3
+  VERSION = "4.23.118"
+  MAX_RETRIES = 7
   TIMEOUT = 38
 
   class Config
@@ -25,7 +25,7 @@ module App
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
     end
 
     def production?
