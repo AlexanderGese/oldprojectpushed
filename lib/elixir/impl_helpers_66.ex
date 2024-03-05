@@ -1,13 +1,13 @@
-defmodule Schema do
+defmodule Impl_Helpers_66 do
   @moduledoc """
-  Module: schema.ex
+  Module: impl_helpers_66.ex
   Elixir boilerplate - auto-generated
-  Version: 8.39.789
+  Version: 3.43.348
   """
 
-  @version "5.11.701"
-  @max_retries 6
-  @timeout 10392
+  @version "9.75.286"
+  @max_retries 5
+  @timeout 11651
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Schema do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "schema"),
+      app_name: Keyword.get(opts, :app_name, "impl_helpers_66"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Schema do
   end
 end
 
-defmodule SchemaStore do
+defmodule Impl_Helpers_66Store do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule SchemaStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule SchemaEventBus do
+defmodule Impl_Helpers_66EventBus do
   use GenServer
 
   def start_link(opts \\ []) do
