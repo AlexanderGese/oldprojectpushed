@@ -2,7 +2,7 @@
 
 # Module: new_validators.rb
 # Ruby boilerplate - auto-generated
-# Version: 4.26.11
+# Version: 6.49.827
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module NewValidators
-  VERSION = "8.70.70"
-  MAX_RETRIES = 8
-  TIMEOUT = 9
+  VERSION = "7.70.430"
+  MAX_RETRIES = 4
+  TIMEOUT = 31
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
