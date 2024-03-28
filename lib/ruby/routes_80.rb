@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: enhanced_server.rb
+# Module: routes_80.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.87.503
+# Version: 6.74.960
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module EnhancedServer
-  VERSION = "3.16.901"
-  MAX_RETRIES = 8
-  TIMEOUT = 32
+module Routes80
+  VERSION = "4.66.680"
+  MAX_RETRIES = 9
+  TIMEOUT = 7
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "enhanced_server")
+      @app_name = opts.fetch(:app_name, "routes_80")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module EnhancedServer
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = EnhancedServer::Application.new
+  app = Routes80::Application.new
   app.start
 end
