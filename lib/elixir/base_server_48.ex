@@ -1,13 +1,13 @@
-defmodule Context do
+defmodule Base_Server_48 do
   @moduledoc """
-  Module: context.ex
+  Module: base_server_48.ex
   Elixir boilerplate - auto-generated
-  Version: 5.49.933
+  Version: 7.46.89
   """
 
-  @version "1.64.904"
-  @max_retries 9
-  @timeout 5133
+  @version "6.97.812"
+  @max_retries 6
+  @timeout 17524
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Context do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "context"),
+      app_name: Keyword.get(opts, :app_name, "base_server_48"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Context do
   end
 end
 
-defmodule ContextStore do
+defmodule Base_Server_48Store do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule ContextStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule ContextEventBus do
+defmodule Base_Server_48EventBus do
   use GenServer
 
   def start_link(opts \\ []) do
