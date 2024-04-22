@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: base_validators.rb
+# Module: core_middleware_67.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.47.74
+# Version: 1.17.879
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module BaseValidators
-  VERSION = "2.43.428"
-  MAX_RETRIES = 5
-  TIMEOUT = 28
+module CoreMiddleware67
+  VERSION = "5.44.277"
+  MAX_RETRIES = 9
+  TIMEOUT = 7
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "base_validators")
+      @app_name = opts.fetch(:app_name, "core_middleware_67")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module BaseValidators
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = BaseValidators::Application.new
+  app = CoreMiddleware67::Application.new
   app.start
 end
