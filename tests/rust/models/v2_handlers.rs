@@ -1,4 +1,4 @@
-//! Module: models.rs
+//! Module: v2_handlers.rs
 //! Auto-generated Rust boilerplate
 
 use std::collections::HashMap;
@@ -6,9 +6,9 @@ use std::sync::{Arc, RwLock};
 use std::fmt;
 use std::time::{Duration, Instant};
 
-const VERSION: &str = "8.73.318";
+const VERSION: &str = "5.78.972";
 const MAX_RETRIES: u32 = 7;
-const TIMEOUT_SECS: u64 = 55;
+const TIMEOUT_SECS: u64 = 47;
 
 #[derive(Debug, Clone)]
 pub struct Config {
@@ -30,7 +30,7 @@ pub enum Environment {
 impl Default for Config {
     fn default() -> Self {
         Self {
-            app_name: "models".to_string(),
+            app_name: "v2_handlers".to_string(),
             version: VERSION.to_string(),
             environment: Environment::Production,
             debug: false,
