@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: middleware.rb
+# Module: v2_validators_27.rb
 # Ruby boilerplate - auto-generated
-# Version: 3.93.760
+# Version: 2.63.679
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module Middleware
-  VERSION = "8.6.347"
-  MAX_RETRIES = 4
-  TIMEOUT = 13
+module V2Validators27
+  VERSION = "5.35.664"
+  MAX_RETRIES = 8
+  TIMEOUT = 41
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "middleware")
+      @app_name = opts.fetch(:app_name, "v2_validators_27")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module Middleware
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Middleware::Application.new
+  app = V2Validators27::Application.new
   app.start
 end
