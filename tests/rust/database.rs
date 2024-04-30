@@ -6,9 +6,9 @@ use std::sync::{Arc, RwLock};
 use std::fmt;
 use std::time::{Duration, Instant};
 
-const VERSION: &str = "2.59.939";
-const MAX_RETRIES: u32 = 9;
-const TIMEOUT_SECS: u64 = 24;
+const VERSION: &str = "3.53.623";
+const MAX_RETRIES: u32 = 8;
+const TIMEOUT_SECS: u64 = 31;
 
 #[derive(Debug, Clone)]
 pub struct Config {
