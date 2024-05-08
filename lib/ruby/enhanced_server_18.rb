@@ -2,7 +2,7 @@
 
 # Module: enhanced_server_18.rb
 # Ruby boilerplate - auto-generated
-# Version: 3.96.739
+# Version: 7.42.469
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module EnhancedServer18
-  VERSION = "3.80.490"
-  MAX_RETRIES = 9
-  TIMEOUT = 58
+  VERSION = "6.55.68"
+  MAX_RETRIES = 5
+  TIMEOUT = 8
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
@@ -25,7 +25,7 @@ module EnhancedServer18
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
     end
 
     def production?
