@@ -2,7 +2,7 @@
 
 # Module: middleware.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.53.320
+# Version: 4.43.437
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module Middleware
-  VERSION = "8.73.237"
-  MAX_RETRIES = 3
-  TIMEOUT = 27
+  VERSION = "8.69.227"
+  MAX_RETRIES = 8
+  TIMEOUT = 47
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
