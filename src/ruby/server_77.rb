@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: v2_middleware.rb
+# Module: server_77.rb
 # Ruby boilerplate - auto-generated
-# Version: 2.30.706
+# Version: 7.96.861
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module V2Middleware
-  VERSION = "1.2.229"
-  MAX_RETRIES = 6
-  TIMEOUT = 34
+module Server77
+  VERSION = "9.51.582"
+  MAX_RETRIES = 8
+  TIMEOUT = 37
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "v2_middleware")
+      @app_name = opts.fetch(:app_name, "server_77")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module V2Middleware
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = V2Middleware::Application.new
+  app = Server77::Application.new
   app.start
 end
