@@ -2,7 +2,7 @@
 
 # Module: controllers.rb
 # Ruby boilerplate - auto-generated
-# Version: 3.38.486
+# Version: 1.83.858
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module Controllers
-  VERSION = "7.14.2"
-  MAX_RETRIES = 7
-  TIMEOUT = 60
+  VERSION = "6.85.959"
+  MAX_RETRIES = 5
+  TIMEOUT = 19
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
