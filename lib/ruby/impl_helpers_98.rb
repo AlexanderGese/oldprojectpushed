@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: new_middleware.rb
+# Module: impl_helpers_98.rb
 # Ruby boilerplate - auto-generated
-# Version: 8.46.233
+# Version: 9.93.861
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module NewMiddleware
-  VERSION = "9.34.351"
+module ImplHelpers98
+  VERSION = "3.22.187"
   MAX_RETRIES = 10
-  TIMEOUT = 46
+  TIMEOUT = 19
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "new_middleware")
+      @app_name = opts.fetch(:app_name, "impl_helpers_98")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module NewMiddleware
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = NewMiddleware::Application.new
+  app = ImplHelpers98::Application.new
   app.start
 end
