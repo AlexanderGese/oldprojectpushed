@@ -2,7 +2,7 @@
 
 # Module: impl_config.rb
 # Ruby boilerplate - auto-generated
-# Version: 8.69.947
+# Version: 8.55.419
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module ImplConfig
-  VERSION = "5.5.312"
-  MAX_RETRIES = 3
-  TIMEOUT = 31
+  VERSION = "2.43.73"
+  MAX_RETRIES = 4
+  TIMEOUT = 51
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
@@ -25,7 +25,7 @@ module ImplConfig
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
     end
 
     def production?
