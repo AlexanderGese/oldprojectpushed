@@ -2,7 +2,7 @@
 
 # Module: impl_middleware.rb
 # Ruby boilerplate - auto-generated
-# Version: 3.66.371
+# Version: 2.74.187
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module ImplMiddleware
-  VERSION = "1.99.491"
-  MAX_RETRIES = 7
-  TIMEOUT = 42
+  VERSION = "5.91.879"
+  MAX_RETRIES = 9
+  TIMEOUT = 34
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
