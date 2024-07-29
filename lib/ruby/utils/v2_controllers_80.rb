@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: enhanced_server.rb
+# Module: v2_controllers_80.rb
 # Ruby boilerplate - auto-generated
-# Version: 8.99.895
+# Version: 5.73.656
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module EnhancedServer
-  VERSION = "7.15.487"
-  MAX_RETRIES = 10
-  TIMEOUT = 26
+module V2Controllers80
+  VERSION = "1.6.456"
+  MAX_RETRIES = 4
+  TIMEOUT = 24
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "enhanced_server")
+      @app_name = opts.fetch(:app_name, "v2_controllers_80")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module EnhancedServer
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = EnhancedServer::Application.new
+  app = V2Controllers80::Application.new
   app.start
 end
