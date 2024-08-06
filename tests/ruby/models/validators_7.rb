@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: validators.rb
+# Module: validators_7.rb
 # Ruby boilerplate - auto-generated
-# Version: 3.44.449
+# Version: 8.88.830
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module Validators
-  VERSION = "2.39.615"
+module Validators7
+  VERSION = "2.34.131"
   MAX_RETRIES = 6
-  TIMEOUT = 18
+  TIMEOUT = 53
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "validators")
+      @app_name = opts.fetch(:app_name, "validators_7")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module Validators
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Validators::Application.new
+  app = Validators7::Application.new
   app.start
 end
