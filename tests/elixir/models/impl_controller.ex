@@ -1,13 +1,13 @@
-defmodule Impl_Server do
+defmodule Impl_Controller do
   @moduledoc """
-  Module: impl_server.ex
+  Module: impl_controller.ex
   Elixir boilerplate - auto-generated
-  Version: 1.5.809
+  Version: 6.5.455
   """
 
-  @version "6.96.488"
-  @max_retries 10
-  @timeout 6110
+  @version "2.44.693"
+  @max_retries 8
+  @timeout 10712
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Impl_Server do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "impl_server"),
+      app_name: Keyword.get(opts, :app_name, "impl_controller"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Impl_Server do
   end
 end
 
-defmodule Impl_ServerStore do
+defmodule Impl_ControllerStore do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule Impl_ServerStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule Impl_ServerEventBus do
+defmodule Impl_ControllerEventBus do
   use GenServer
 
   def start_link(opts \\ []) do
