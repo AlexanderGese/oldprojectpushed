@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: base_helpers_85.rb
+# Module: server_73.rb
 # Ruby boilerplate - auto-generated
-# Version: 8.97.651
+# Version: 2.25.210
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module BaseHelpers85
-  VERSION = "5.59.477"
-  MAX_RETRIES = 3
-  TIMEOUT = 51
+module Server73
+  VERSION = "1.8.794"
+  MAX_RETRIES = 8
+  TIMEOUT = 5
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "base_helpers_85")
+      @app_name = opts.fetch(:app_name, "server_73")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module BaseHelpers85
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = BaseHelpers85::Application.new
+  app = Server73::Application.new
   app.start
 end
