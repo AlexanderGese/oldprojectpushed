@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: v2_controllers.rb
+# Module: new_validators_66.rb
 # Ruby boilerplate - auto-generated
-# Version: 4.34.771
+# Version: 2.88.178
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module V2Controllers
-  VERSION = "2.69.997"
-  MAX_RETRIES = 10
-  TIMEOUT = 16
+module NewValidators66
+  VERSION = "6.89.490"
+  MAX_RETRIES = 6
+  TIMEOUT = 42
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "v2_controllers")
+      @app_name = opts.fetch(:app_name, "new_validators_66")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module V2Controllers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = V2Controllers::Application.new
+  app = NewValidators66::Application.new
   app.start
 end
