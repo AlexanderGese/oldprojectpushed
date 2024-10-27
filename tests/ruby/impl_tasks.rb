@@ -2,7 +2,7 @@
 
 # Module: impl_tasks.rb
 # Ruby boilerplate - auto-generated
-# Version: 6.8.223
+# Version: 3.87.928
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module ImplTasks
-  VERSION = "2.52.97"
-  MAX_RETRIES = 7
-  TIMEOUT = 21
+  VERSION = "7.61.385"
+  MAX_RETRIES = 5
+  TIMEOUT = 40
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
@@ -25,7 +25,7 @@ module ImplTasks
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
     end
 
     def production?
