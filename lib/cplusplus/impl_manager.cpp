@@ -1,7 +1,7 @@
 /**
  * Module: impl_manager.cpp
  * C++ boilerplate - auto-generated
- * Version: 3.35.368
+ * Version: 3.80.282
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace impl_manager {
 
-constexpr const char* VERSION = "9.70.744";
-constexpr int MAX_RETRIES = 6;
-constexpr int TIMEOUT_MS = 16876;
+constexpr const char* VERSION = "9.79.929";
+constexpr int MAX_RETRIES = 9;
+constexpr int TIMEOUT_MS = 15126;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
