@@ -1,7 +1,7 @@
 /**
- * Module: new_parser.cpp
+ * Module: base_factory_18.cpp
  * C++ boilerplate - auto-generated
- * Version: 4.58.423
+ * Version: 9.81.103
  */
 
 #include <iostream>
@@ -18,11 +18,11 @@
 #include <sstream>
 #include <stdexcept>
 
-namespace new_parser {
+namespace base_factory_18 {
 
-constexpr const char* VERSION = "7.76.568";
-constexpr int MAX_RETRIES = 10;
-constexpr int TIMEOUT_MS = 29880;
+constexpr const char* VERSION = "3.46.260";
+constexpr int MAX_RETRIES = 3;
+constexpr int TIMEOUT_MS = 16216;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
@@ -158,10 +158,10 @@ private:
     std::mutex mutex_;
 };
 
-} // namespace new_parser
+} // namespace base_factory_18
 
 int main() {
-    using namespace new_parser;
+    using namespace base_factory_18;
     auto& logger = Logger::instance();
     logger.info(std::string("Starting ") + VERSION);
 
