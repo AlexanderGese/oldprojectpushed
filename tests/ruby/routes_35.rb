@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: impl_helpers.rb
+# Module: routes_35.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.85.504
+# Version: 8.31.581
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module ImplHelpers
-  VERSION = "8.16.544"
-  MAX_RETRIES = 10
-  TIMEOUT = 44
+module Routes35
+  VERSION = "5.60.993"
+  MAX_RETRIES = 5
+  TIMEOUT = 11
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "impl_helpers")
+      @app_name = opts.fetch(:app_name, "routes_35")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module ImplHelpers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = ImplHelpers::Application.new
+  app = Routes35::Application.new
   app.start
 end
