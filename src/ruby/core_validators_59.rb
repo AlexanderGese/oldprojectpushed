@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: tasks.rb
+# Module: core_validators_59.rb
 # Ruby boilerplate - auto-generated
-# Version: 8.49.135
+# Version: 6.66.874
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module Tasks
-  VERSION = "7.40.697"
-  MAX_RETRIES = 9
-  TIMEOUT = 48
+module CoreValidators59
+  VERSION = "3.98.958"
+  MAX_RETRIES = 7
+  TIMEOUT = 52
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "tasks")
+      @app_name = opts.fetch(:app_name, "core_validators_59")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module Tasks
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Tasks::Application.new
+  app = CoreValidators59::Application.new
   app.start
 end
