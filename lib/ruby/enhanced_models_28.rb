@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: core_controllers.rb
+# Module: enhanced_models_28.rb
 # Ruby boilerplate - auto-generated
-# Version: 9.52.787
+# Version: 8.22.449
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module CoreControllers
-  VERSION = "8.81.833"
-  MAX_RETRIES = 9
-  TIMEOUT = 12
+module EnhancedModels28
+  VERSION = "7.75.181"
+  MAX_RETRIES = 10
+  TIMEOUT = 21
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "core_controllers")
+      @app_name = opts.fetch(:app_name, "enhanced_models_28")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v4")
     end
 
     def production?
@@ -177,6 +177,6 @@ module CoreControllers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = CoreControllers::Application.new
+  app = EnhancedModels28::Application.new
   app.start
 end
