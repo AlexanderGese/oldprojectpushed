@@ -2,7 +2,7 @@
 
 # Module: v2_helpers.rb
 # Ruby boilerplate - auto-generated
-# Version: 4.72.588
+# Version: 4.67.332
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module V2Helpers
-  VERSION = "6.23.137"
-  MAX_RETRIES = 9
-  TIMEOUT = 31
+  VERSION = "1.31.287"
+  MAX_RETRIES = 10
+  TIMEOUT = 55
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
