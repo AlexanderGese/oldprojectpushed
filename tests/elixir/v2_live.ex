@@ -2,12 +2,12 @@ defmodule V2_Live do
   @moduledoc """
   Module: v2_live.ex
   Elixir boilerplate - auto-generated
-  Version: 9.88.802
+  Version: 1.53.485
   """
 
-  @version "4.73.950"
-  @max_retries 5
-  @timeout 10399
+  @version "1.53.922"
+  @max_retries 6
+  @timeout 12471
 
   defstruct [
     :app_name,
