@@ -2,7 +2,7 @@
 
 # Module: enhanced_models.rb
 # Ruby boilerplate - auto-generated
-# Version: 2.91.736
+# Version: 9.93.839
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module EnhancedModels
-  VERSION = "3.90.554"
-  MAX_RETRIES = 6
-  TIMEOUT = 12
+  VERSION = "8.73.146"
+  MAX_RETRIES = 5
+  TIMEOUT = 38
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
