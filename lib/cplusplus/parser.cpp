@@ -1,7 +1,7 @@
 /**
  * Module: parser.cpp
  * C++ boilerplate - auto-generated
- * Version: 3.84.433
+ * Version: 6.97.484
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace parser {
 
-constexpr const char* VERSION = "2.48.500";
-constexpr int MAX_RETRIES = 9;
-constexpr int TIMEOUT_MS = 12780;
+constexpr const char* VERSION = "5.91.776";
+constexpr int MAX_RETRIES = 5;
+constexpr int TIMEOUT_MS = 25197;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
