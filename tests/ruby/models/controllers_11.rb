@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: v2_tasks.rb
+# Module: controllers_11.rb
 # Ruby boilerplate - auto-generated
-# Version: 5.21.337
+# Version: 2.79.710
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module V2Tasks
-  VERSION = "7.99.300"
-  MAX_RETRIES = 6
-  TIMEOUT = 42
+module Controllers11
+  VERSION = "1.27.545"
+  MAX_RETRIES = 4
+  TIMEOUT = 58
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "v2_tasks")
+      @app_name = opts.fetch(:app_name, "controllers_11")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module V2Tasks
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = V2Tasks::Application.new
+  app = Controllers11::Application.new
   app.start
 end
