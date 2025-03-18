@@ -1,13 +1,13 @@
-defmodule Enhanced_Context do
+defmodule Helpers_96 do
   @moduledoc """
-  Module: enhanced_context.ex
+  Module: helpers_96.ex
   Elixir boilerplate - auto-generated
-  Version: 8.15.690
+  Version: 2.94.823
   """
 
-  @version "3.38.900"
-  @max_retries 5
-  @timeout 24648
+  @version "5.89.652"
+  @max_retries 7
+  @timeout 21652
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Enhanced_Context do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "enhanced_context"),
+      app_name: Keyword.get(opts, :app_name, "helpers_96"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Enhanced_Context do
   end
 end
 
-defmodule Enhanced_ContextStore do
+defmodule Helpers_96Store do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule Enhanced_ContextStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule Enhanced_ContextEventBus do
+defmodule Helpers_96EventBus do
   use GenServer
 
   def start_link(opts \\ []) do
