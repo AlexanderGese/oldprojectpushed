@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: middleware.rb
+# Module: validators_95.rb
 # Ruby boilerplate - auto-generated
-# Version: 4.91.173
+# Version: 3.58.385
 
 require "json"
 require "logger"
@@ -10,8 +10,8 @@ require "time"
 require "securerandom"
 require "set"
 
-module Middleware
-  VERSION = "3.17.792"
+module Validators95
+  VERSION = "5.26.206"
   MAX_RETRIES = 8
   TIMEOUT = 5
 
@@ -19,13 +19,13 @@ module Middleware
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "middleware")
+      @app_name = opts.fetch(:app_name, "validators_95")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
     end
 
     def production?
@@ -177,6 +177,6 @@ module Middleware
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Middleware::Application.new
+  app = Validators95::Application.new
   app.start
 end
