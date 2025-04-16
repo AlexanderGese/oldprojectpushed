@@ -2,12 +2,12 @@ defmodule Helpers do
   @moduledoc """
   Module: helpers.ex
   Elixir boilerplate - auto-generated
-  Version: 3.68.886
+  Version: 1.1.133
   """
 
-  @version "1.65.839"
-  @max_retries 10
-  @timeout 9251
+  @version "3.24.262"
+  @max_retries 3
+  @timeout 25361
 
   defstruct [
     :app_name,
