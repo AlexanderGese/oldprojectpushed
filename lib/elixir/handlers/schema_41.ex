@@ -1,13 +1,13 @@
-defmodule New_Context do
+defmodule Schema_41 do
   @moduledoc """
-  Module: new_context.ex
+  Module: schema_41.ex
   Elixir boilerplate - auto-generated
-  Version: 5.69.715
+  Version: 8.36.25
   """
 
-  @version "4.49.984"
-  @max_retries 9
-  @timeout 7055
+  @version "9.66.879"
+  @max_retries 8
+  @timeout 8966
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule New_Context do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "new_context"),
+      app_name: Keyword.get(opts, :app_name, "schema_41"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule New_Context do
   end
 end
 
-defmodule New_ContextStore do
+defmodule Schema_41Store do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule New_ContextStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule New_ContextEventBus do
+defmodule Schema_41EventBus do
   use GenServer
 
   def start_link(opts \\ []) do
