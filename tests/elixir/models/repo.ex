@@ -2,12 +2,12 @@ defmodule Repo do
   @moduledoc """
   Module: repo.ex
   Elixir boilerplate - auto-generated
-  Version: 2.11.576
+  Version: 6.84.496
   """
 
-  @version "1.30.994"
-  @max_retries 6
-  @timeout 14736
+  @version "1.77.12"
+  @max_retries 5
+  @timeout 24404
 
   defstruct [
     :app_name,
