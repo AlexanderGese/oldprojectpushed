@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: enhanced_models_51.rb
+# Module: base_config_83.rb
 # Ruby boilerplate - auto-generated
-# Version: 4.20.280
+# Version: 9.70.312
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module EnhancedModels51
-  VERSION = "2.69.567"
-  MAX_RETRIES = 10
-  TIMEOUT = 45
+module BaseConfig83
+  VERSION = "6.6.579"
+  MAX_RETRIES = 9
+  TIMEOUT = 18
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "enhanced_models_51")
+      @app_name = opts.fetch(:app_name, "base_config_83")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
     end
 
     def production?
@@ -177,6 +177,6 @@ module EnhancedModels51
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = EnhancedModels51::Application.new
+  app = BaseConfig83::Application.new
   app.start
 end
