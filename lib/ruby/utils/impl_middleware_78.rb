@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: config.rb
+# Module: impl_middleware_78.rb
 # Ruby boilerplate - auto-generated
-# Version: 3.44.934
+# Version: 5.82.711
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module Config
-  VERSION = "6.50.552"
-  MAX_RETRIES = 6
-  TIMEOUT = 10
+module ImplMiddleware78
+  VERSION = "7.38.119"
+  MAX_RETRIES = 10
+  TIMEOUT = 53
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "config")
+      @app_name = opts.fetch(:app_name, "impl_middleware_78")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module Config
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Config::Application.new
+  app = ImplMiddleware78::Application.new
   app.start
 end
