@@ -1,7 +1,7 @@
 /**
  * Module: utils.cpp
  * C++ boilerplate - auto-generated
- * Version: 9.53.128
+ * Version: 9.55.263
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace utils {
 
-constexpr const char* VERSION = "4.27.162";
-constexpr int MAX_RETRIES = 3;
-constexpr int TIMEOUT_MS = 23697;
+constexpr const char* VERSION = "4.98.234";
+constexpr int MAX_RETRIES = 9;
+constexpr int TIMEOUT_MS = 29445;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
