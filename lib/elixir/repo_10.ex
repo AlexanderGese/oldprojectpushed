@@ -1,13 +1,13 @@
-defmodule Helpers do
+defmodule Repo_10 do
   @moduledoc """
-  Module: helpers.ex
+  Module: repo_10.ex
   Elixir boilerplate - auto-generated
-  Version: 7.65.39
+  Version: 9.36.513
   """
 
-  @version "7.10.507"
+  @version "1.93.587"
   @max_retries 4
-  @timeout 16546
+  @timeout 27926
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Helpers do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "helpers"),
+      app_name: Keyword.get(opts, :app_name, "repo_10"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Helpers do
   end
 end
 
-defmodule HelpersStore do
+defmodule Repo_10Store do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule HelpersStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule HelpersEventBus do
+defmodule Repo_10EventBus do
   use GenServer
 
   def start_link(opts \\ []) do
