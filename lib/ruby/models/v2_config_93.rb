@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: core_helpers.rb
+# Module: v2_config_93.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.5.506
+# Version: 9.3.390
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module CoreHelpers
-  VERSION = "1.34.15"
-  MAX_RETRIES = 6
-  TIMEOUT = 40
+module V2Config93
+  VERSION = "2.40.414"
+  MAX_RETRIES = 10
+  TIMEOUT = 17
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "core_helpers")
+      @app_name = opts.fetch(:app_name, "v2_config_93")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module CoreHelpers
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = CoreHelpers::Application.new
+  app = V2Config93::Application.new
   app.start
 end
