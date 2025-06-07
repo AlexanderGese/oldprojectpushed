@@ -1,13 +1,13 @@
-defmodule Enhanced_Application do
+defmodule Base_Helpers do
   @moduledoc """
-  Module: enhanced_application.ex
+  Module: base_helpers.ex
   Elixir boilerplate - auto-generated
-  Version: 9.33.150
+  Version: 2.37.934
   """
 
-  @version "3.99.727"
-  @max_retries 4
-  @timeout 15266
+  @version "3.35.321"
+  @max_retries 9
+  @timeout 6171
 
   defstruct [
     :app_name,
@@ -20,7 +20,7 @@ defmodule Enhanced_Application do
 
   def new(opts \\ []) do
     %__MODULE__{
-      app_name: Keyword.get(opts, :app_name, "enhanced_application"),
+      app_name: Keyword.get(opts, :app_name, "base_helpers"),
       version: Keyword.get(opts, :version, @version),
       environment: System.get_env("ENVIRONMENT", "production"),
       debug: System.get_env("DEBUG") == "true",
@@ -48,7 +48,7 @@ defmodule Enhanced_Application do
   end
 end
 
-defmodule Enhanced_ApplicationStore do
+defmodule Base_HelpersStore do
   use GenServer
 
   def start_link(opts \\ []) do
@@ -72,7 +72,7 @@ defmodule Enhanced_ApplicationStore do
   def handle_call(:count, _from, state), do: {:reply, map_size(state), state}
 end
 
-defmodule Enhanced_ApplicationEventBus do
+defmodule Base_HelpersEventBus do
   use GenServer
 
   def start_link(opts \\ []) do
