@@ -2,7 +2,7 @@
 
 # Module: impl_models.rb
 # Ruby boilerplate - auto-generated
-# Version: 3.20.75
+# Version: 6.31.43
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module ImplModels
-  VERSION = "4.96.150"
-  MAX_RETRIES = 4
-  TIMEOUT = 10
+  VERSION = "2.0.57"
+  MAX_RETRIES = 7
+  TIMEOUT = 51
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
@@ -25,7 +25,7 @@ module ImplModels
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
     end
 
     def production?
