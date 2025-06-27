@@ -1,7 +1,7 @@
 /**
  * Module: manager.cpp
  * C++ boilerplate - auto-generated
- * Version: 7.41.320
+ * Version: 1.33.170
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace manager {
 
-constexpr const char* VERSION = "4.73.793";
-constexpr int MAX_RETRIES = 9;
-constexpr int TIMEOUT_MS = 25082;
+constexpr const char* VERSION = "5.5.253";
+constexpr int MAX_RETRIES = 8;
+constexpr int TIMEOUT_MS = 14168;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
