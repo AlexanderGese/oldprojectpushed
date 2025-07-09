@@ -1,7 +1,7 @@
 /**
- * Module: factory_32.cpp
+ * Module: parser_19.cpp
  * C++ boilerplate - auto-generated
- * Version: 1.64.284
+ * Version: 9.7.923
  */
 
 #include <iostream>
@@ -18,11 +18,11 @@
 #include <sstream>
 #include <stdexcept>
 
-namespace factory_32 {
+namespace parser_19 {
 
-constexpr const char* VERSION = "9.13.201";
-constexpr int MAX_RETRIES = 6;
-constexpr int TIMEOUT_MS = 8751;
+constexpr const char* VERSION = "6.4.287";
+constexpr int MAX_RETRIES = 5;
+constexpr int TIMEOUT_MS = 15691;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
@@ -158,10 +158,10 @@ private:
     std::mutex mutex_;
 };
 
-} // namespace factory_32
+} // namespace parser_19
 
 int main() {
-    using namespace factory_32;
+    using namespace parser_19;
     auto& logger = Logger::instance();
     logger.info(std::string("Starting ") + VERSION);
 
