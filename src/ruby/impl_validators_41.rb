@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: core_app.rb
+# Module: impl_validators_41.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.91.977
+# Version: 5.97.71
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module CoreApp
-  VERSION = "5.45.969"
-  MAX_RETRIES = 10
-  TIMEOUT = 51
+module ImplValidators41
+  VERSION = "2.79.534"
+  MAX_RETRIES = 4
+  TIMEOUT = 27
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "core_app")
+      @app_name = opts.fetch(:app_name, "impl_validators_41")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module CoreApp
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = CoreApp::Application.new
+  app = ImplValidators41::Application.new
   app.start
 end
