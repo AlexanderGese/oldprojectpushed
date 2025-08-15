@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: routes.rb
+# Module: middleware_70.rb
 # Ruby boilerplate - auto-generated
-# Version: 4.4.225
+# Version: 6.43.614
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module Routes
-  VERSION = "8.64.840"
+module Middleware70
+  VERSION = "3.90.145"
   MAX_RETRIES = 9
-  TIMEOUT = 31
+  TIMEOUT = 48
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "routes")
+      @app_name = opts.fetch(:app_name, "middleware_70")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module Routes
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Routes::Application.new
+  app = Middleware70::Application.new
   app.start
 end
