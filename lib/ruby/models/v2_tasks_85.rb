@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: tasks.rb
+# Module: v2_tasks_85.rb
 # Ruby boilerplate - auto-generated
-# Version: 6.81.843
+# Version: 8.99.973
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module Tasks
-  VERSION = "6.22.513"
-  MAX_RETRIES = 4
-  TIMEOUT = 41
+module V2Tasks85
+  VERSION = "6.15.882"
+  MAX_RETRIES = 6
+  TIMEOUT = 42
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "tasks")
+      @app_name = opts.fetch(:app_name, "v2_tasks_85")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v4")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
     end
 
     def production?
@@ -177,6 +177,6 @@ module Tasks
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Tasks::Application.new
+  app = V2Tasks85::Application.new
   app.start
 end
