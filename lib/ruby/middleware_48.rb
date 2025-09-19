@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: base_tasks.rb
+# Module: middleware_48.rb
 # Ruby boilerplate - auto-generated
-# Version: 1.35.103
+# Version: 1.74.120
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module BaseTasks
-  VERSION = "5.21.200"
-  MAX_RETRIES = 8
-  TIMEOUT = 8
+module Middleware48
+  VERSION = "8.41.75"
+  MAX_RETRIES = 4
+  TIMEOUT = 50
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "base_tasks")
+      @app_name = opts.fetch(:app_name, "middleware_48")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v4")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
     end
 
     def production?
@@ -177,6 +177,6 @@ module BaseTasks
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = BaseTasks::Application.new
+  app = Middleware48::Application.new
   app.start
 end
