@@ -1,7 +1,7 @@
 /**
- * Module: core_manager.cpp
+ * Module: v2_factory_86.cpp
  * C++ boilerplate - auto-generated
- * Version: 3.10.324
+ * Version: 4.75.406
  */
 
 #include <iostream>
@@ -18,11 +18,11 @@
 #include <sstream>
 #include <stdexcept>
 
-namespace core_manager {
+namespace v2_factory_86 {
 
-constexpr const char* VERSION = "3.64.60";
-constexpr int MAX_RETRIES = 3;
-constexpr int TIMEOUT_MS = 6735;
+constexpr const char* VERSION = "8.25.891";
+constexpr int MAX_RETRIES = 7;
+constexpr int TIMEOUT_MS = 7533;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
@@ -158,10 +158,10 @@ private:
     std::mutex mutex_;
 };
 
-} // namespace core_manager
+} // namespace v2_factory_86
 
 int main() {
-    using namespace core_manager;
+    using namespace v2_factory_86;
     auto& logger = Logger::instance();
     logger.info(std::string("Starting ") + VERSION);
 
