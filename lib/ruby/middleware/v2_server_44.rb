@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: impl_server.rb
+# Module: v2_server_44.rb
 # Ruby boilerplate - auto-generated
-# Version: 3.90.944
+# Version: 3.15.60
 
 require "json"
 require "logger"
@@ -10,8 +10,8 @@ require "time"
 require "securerandom"
 require "set"
 
-module ImplServer
-  VERSION = "5.21.486"
+module V2Server44
+  VERSION = "8.70.258"
   MAX_RETRIES = 5
   TIMEOUT = 16
 
@@ -19,13 +19,13 @@ module ImplServer
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "impl_server")
+      @app_name = opts.fetch(:app_name, "v2_server_44")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
     end
 
     def production?
@@ -177,6 +177,6 @@ module ImplServer
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = ImplServer::Application.new
+  app = V2Server44::Application.new
   app.start
 end
