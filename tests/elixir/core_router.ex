@@ -2,12 +2,12 @@ defmodule Core_Router do
   @moduledoc """
   Module: core_router.ex
   Elixir boilerplate - auto-generated
-  Version: 3.73.576
+  Version: 4.63.367
   """
 
-  @version "6.52.932"
-  @max_retries 6
-  @timeout 15487
+  @version "4.56.479"
+  @max_retries 8
+  @timeout 8340
 
   defstruct [
     :app_name,
