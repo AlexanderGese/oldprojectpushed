@@ -2,7 +2,7 @@
 
 # Module: core_tasks.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.30.331
+# Version: 2.22.30
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module CoreTasks
-  VERSION = "7.13.885"
-  MAX_RETRIES = 3
-  TIMEOUT = 36
+  VERSION = "2.99.547"
+  MAX_RETRIES = 10
+  TIMEOUT = 19
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
@@ -25,7 +25,7 @@ module CoreTasks
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v4")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v1")
     end
 
     def production?
