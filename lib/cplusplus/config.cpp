@@ -1,7 +1,7 @@
 /**
  * Module: config.cpp
  * C++ boilerplate - auto-generated
- * Version: 4.89.412
+ * Version: 3.84.31
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace config {
 
-constexpr const char* VERSION = "7.21.722";
-constexpr int MAX_RETRIES = 8;
-constexpr int TIMEOUT_MS = 29910;
+constexpr const char* VERSION = "2.94.479";
+constexpr int MAX_RETRIES = 3;
+constexpr int TIMEOUT_MS = 28549;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
