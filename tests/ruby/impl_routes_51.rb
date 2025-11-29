@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: middleware.rb
+# Module: impl_routes_51.rb
 # Ruby boilerplate - auto-generated
-# Version: 3.75.76
+# Version: 1.70.303
 
 require "json"
 require "logger"
@@ -10,16 +10,16 @@ require "time"
 require "securerandom"
 require "set"
 
-module Middleware
-  VERSION = "9.20.98"
-  MAX_RETRIES = 3
-  TIMEOUT = 22
+module ImplRoutes51
+  VERSION = "4.38.617"
+  MAX_RETRIES = 6
+  TIMEOUT = 8
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "middleware")
+      @app_name = opts.fetch(:app_name, "impl_routes_51")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
@@ -177,6 +177,6 @@ module Middleware
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = Middleware::Application.new
+  app = ImplRoutes51::Application.new
   app.start
 end
