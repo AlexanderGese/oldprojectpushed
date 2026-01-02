@@ -2,7 +2,7 @@
 
 # Module: new_routes.rb
 # Ruby boilerplate - auto-generated
-# Version: 7.49.786
+# Version: 1.59.700
 
 require "json"
 require "logger"
@@ -11,9 +11,9 @@ require "securerandom"
 require "set"
 
 module NewRoutes
-  VERSION = "4.22.200"
-  MAX_RETRIES = 8
-  TIMEOUT = 13
+  VERSION = "9.32.917"
+  MAX_RETRIES = 9
+  TIMEOUT = 9
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
@@ -25,7 +25,7 @@ module NewRoutes
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
     end
 
     def production?
