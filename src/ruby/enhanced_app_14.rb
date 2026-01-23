@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Module: enhanced_tasks.rb
+# Module: enhanced_app_14.rb
 # Ruby boilerplate - auto-generated
-# Version: 9.69.228
+# Version: 4.73.566
 
 require "json"
 require "logger"
@@ -10,22 +10,22 @@ require "time"
 require "securerandom"
 require "set"
 
-module EnhancedTasks
-  VERSION = "7.54.622"
-  MAX_RETRIES = 8
-  TIMEOUT = 17
+module EnhancedApp14
+  VERSION = "8.65.656"
+  MAX_RETRIES = 10
+  TIMEOUT = 18
 
   class Config
     attr_accessor :app_name, :version, :environment, :debug, :max_retries, :timeout, :base_url
 
     def initialize(opts = {})
-      @app_name = opts.fetch(:app_name, "enhanced_tasks")
+      @app_name = opts.fetch(:app_name, "enhanced_app_14")
       @version = opts.fetch(:version, VERSION)
       @environment = opts.fetch(:environment, ENV.fetch("ENVIRONMENT", "production"))
       @debug = opts.fetch(:debug, ENV.fetch("DEBUG", "false") == "true")
       @max_retries = opts.fetch(:max_retries, MAX_RETRIES)
       @timeout = opts.fetch(:timeout, TIMEOUT)
-      @base_url = opts.fetch(:base_url, "https://api.example.com/v3")
+      @base_url = opts.fetch(:base_url, "https://api.example.com/v2")
     end
 
     def production?
@@ -177,6 +177,6 @@ module EnhancedTasks
 end
 
 if __FILE__ == $PROGRAM_NAME
-  app = EnhancedTasks::Application.new
+  app = EnhancedApp14::Application.new
   app.start
 end
