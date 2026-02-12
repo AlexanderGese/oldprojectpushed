@@ -2,12 +2,12 @@ defmodule Enhanced_Context do
   @moduledoc """
   Module: enhanced_context.ex
   Elixir boilerplate - auto-generated
-  Version: 5.32.453
+  Version: 4.74.264
   """
 
-  @version "7.97.194"
-  @max_retries 9
-  @timeout 17511
+  @version "4.37.558"
+  @max_retries 6
+  @timeout 17005
 
   defstruct [
     :app_name,
