@@ -2,12 +2,12 @@ defmodule Core_Schema do
   @moduledoc """
   Module: core_schema.ex
   Elixir boilerplate - auto-generated
-  Version: 2.74.901
+  Version: 9.86.769
   """
 
-  @version "8.17.952"
-  @max_retries 9
-  @timeout 26930
+  @version "7.78.373"
+  @max_retries 3
+  @timeout 21827
 
   defstruct [
     :app_name,
