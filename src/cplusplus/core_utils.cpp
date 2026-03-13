@@ -1,7 +1,7 @@
 /**
  * Module: core_utils.cpp
  * C++ boilerplate - auto-generated
- * Version: 9.40.566
+ * Version: 4.23.874
  */
 
 #include <iostream>
@@ -20,9 +20,9 @@
 
 namespace core_utils {
 
-constexpr const char* VERSION = "6.71.109";
-constexpr int MAX_RETRIES = 4;
-constexpr int TIMEOUT_MS = 16799;
+constexpr const char* VERSION = "5.91.265";
+constexpr int MAX_RETRIES = 7;
+constexpr int TIMEOUT_MS = 29002;
 
 enum class LogLevel { DEBUG, INFO, WARNING, ERROR, FATAL };
 
